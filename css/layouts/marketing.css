@@ -3,7 +3,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+html {
+    font-family: 'Hind', sans-serif;
+}
 /*
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
@@ -12,7 +14,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Hind', sans-serif;
 }
 
 h1,
@@ -59,7 +61,7 @@ label {
  */
 .pure-form label {
     margin: 1em 0 0;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 100%;
 }
 
@@ -88,57 +90,6 @@ a.pure-button-primary {
     color: #1f8dd6;
     border-radius: 5px;
     font-size: 120%;
-}
-
-
-/*
- * -- MENU STYLES --
- * I want to customize how my .pure-menu looks at the top of the page
- */
-
-.home-menu {
-    padding: 0.5em;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.1);
-}
-.home-menu {
-    background: #2d3e50;
-}
-
-.header {
-    border-bottom: 2px solid #fff;
-}
-
-.pure-menu.pure-menu-fixed {
-    /* Fixed menus normally have a border at the bottom. */
-    border-bottom: none;
-    /* I need a higher z-index here because of the scroll-over effect. */
-    z-index: 4;
-}
-
-.home-menu .pure-menu-heading {
-    color: white;
-    font-weight: 800;
-    font-size: 120%;
-}
-
-.home-menu .pure-menu-heading em {
-    font-style: normal;
-    font-weight: 200;
-}
-
-.home-menu .pure-menu-selected a {
-    color: white;
-}
-
-.home-menu a {
-    color: #6FBEF3;
-}
-.home-menu li a:hover,
-.home-menu li a:focus {
-    background: none;
-    border: none;
-    color: #AECFE5;
 }
 
 
@@ -351,4 +302,141 @@ a.pure-button-primary {
         margin-top: 50px;
         font-size: 60px;
     }
+}
+
+
+/*
+ * -- MENU STYLES --
+ * 
+ */
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.1);
+}
+.home-menu {
+    background: #112a3e;
+}
+
+.header {
+    border-bottom: 2px solid #fff;
+}
+
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 800;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-heading em {
+    font-style: normal;
+    font-weight: 200;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #fff;
+}
+.home-menu li {
+    padding-top: 30px;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #f26c63;
+}
+
+
+/* Custom menu */
+.mc-logo img {
+    width: 250px;
+    display: block;
+    float: left;
+}
+.custom-wrapper {
+  margin-bottom: 1em;
+  -webkit-font-smoothing: antialiased;
+  height: 5em;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+  height: 10em;
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+.custom-toggle .bar {
+  background-color: #fff;
+  display: block;
+  width: 48px;
+  height: 4px;
+  border-radius: 100px;
+  position: absolute;
+  top: 30px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+  .custom-menu-3 {
+    text-align: left;
+  }
+
+  .custom-toggle {
+    display: block;
+  }
+
 }
