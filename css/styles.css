@@ -359,7 +359,7 @@ a.pure-button-primary {
 .custom-wrapper.open {
   height: 12em; }
   .custom-wrapper.open .pure-menu-link {
-    font-size: 1.25em;
+    font-size: .9em;
     padding-top: 0; }
 
 .custom-menu-3 {
@@ -376,11 +376,11 @@ a.pure-button-primary {
 .custom-toggle .bar {
   background-color: #fff;
   display: block;
-  width: 48px;
+  width: 28px;
   height: 4px;
   border-radius: 100px;
   position: absolute;
-  top: 30px;
+  top: 37px;
   right: 7px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
