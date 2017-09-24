@@ -8,7 +8,7 @@
 $mc-black:  #112a3e;
 $mc-orange: #f26c63; 
 $mc-red:    #ed145b;
-$mc-red-tint: lighten($mc-red, 25%);  
+$mc-red-tint: lighten($mc-red, 30%);  
 
 @mixin mc-gradient {
   background: red; /* For browsers that do not support gradients */
@@ -38,16 +38,16 @@ body {
     font-size: 16px;
     font-family: 'Hind', sans-serif;
 }
-
+p  { font-size: 19px; line-height: 30px; font-weight: 300;}
 h1 { font-size: 3em; line-height: 4em;}
-h2 { font-size: 1.8em; line-height: 2.1em;}
+h2 { font-size: 2.4em; line-height: 3.1em;}
 h3 { font-size: 1.6em; line-height: 1.8em;}
 h4 { font-size: 1.4em; line-height: 1.5em;}
 h5 { font-size: 1.2em; line-height: 1.4em;}
 h6 { font-size: 1em; line-height: 1.5em;}
 
 @mixin h1 { font-size: 3em; line-height: 4em; font-weight: 700;}
-@mixin h2 { font-size: 1.8em; line-height: 2.1em;}
+@mixin h2 { font-size: 2.4em; line-height: 3.1em;}
 @mixin h3 { font-size: 1.6em; line-height: 1.8em;}
 @mixin h4 { font-size: 1.4em; line-height: 1.5em;}
 @mixin h5 { font-size: 1.2em; line-height: 1.4em;}
@@ -83,6 +83,10 @@ label {
 .l-box-lrg {
     padding: 2em;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.xl-box {
+  padding: 1em 2.5em;
 }
 
 .is-center {
@@ -139,7 +143,7 @@ a.pure-button-primary {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 350px;
+    height: 400px;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -171,7 +175,6 @@ a.pure-button-primary {
 .splash-head {
   @include h1;
     margin-top: 50px;
-    padding: 1em 1.6em 0 1.6em;
     border-radius: 5px;
     line-height: 1em;
     font-weight: 700;
@@ -195,7 +198,7 @@ a.pure-button-primary {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 360px;
+    top: 700px;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -205,7 +208,7 @@ a.pure-button-primary {
 
 /* We want to give the content area some more padding */
 .content {
-    padding: 1em 1em 3em;
+    padding: 3em 1em 3em;
 }
 
 /* This is the class used for the main content headers (<h2>) */
@@ -220,8 +223,8 @@ a.pure-button-primary {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead, label {
-    color: #1f8dd6;
-    text-align: center;
+    color: $mc-red;
+    text-align: left;
 }
 
 #speakwithus .content-subhead, label {
@@ -247,17 +250,47 @@ a.pure-button-primary {
     font-size: .8em;
 }
 
-@media screen and (min-width: 25.5em) {
+@media screen and (max-width: 641px) {
     .splash-container {
-        /*height: 400px;*/
+        height: 700px;
     }
     .content-wrapper {
         /*top: 40%;*/
     }
     .splash {
-        margin-top: 120px;
+        margin-top: 250px;
         /*height: 50%;*/
     }
+}
+
+@media (min-width: 641px) and (max-width: 48em) {
+    .splash-container {
+        height: 700px;
+    }
+    .content-wrapper {
+        /*top: 40%;*/
+    }
+    .splash {
+        margin-top: 40%;
+        /*height: 50%;*/
+    }
+}
+
+#speakwithus {
+  background-color: $mc-red;
+  h2 {
+    color: white;
+  }
+  p {
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $mc-red-tint;
+      border-style: solid;
+      border-width: 0 0 5px 0;
+      border-bottom: solid $mc-red-tint;
+    }
+  }
 }
 
 /*
@@ -272,13 +305,18 @@ a.pure-button-primary {
         font-size: 16px;
     }
 
+    .splash {
+        margin-top: 20%;
+        /*height: 50%;*/
+    }
+
     .splash-container {
       margin-top: 90px;  
       height: 570px;
       }
 
     .content-wrapper {
-        top: 580px;
+        top: 700px;
     }
 
     /* We can align the menu header to the left, but float the
@@ -356,7 +394,7 @@ a.pure-button-primary {
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #f26c63;
+    color: $mc-red;
 }
 
 
