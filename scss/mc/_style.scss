@@ -1,13 +1,13 @@
 /* BRAND 
  * 
  * Black #112a3e
- * Orange #f26c63
- * Red #ed145b
+ * Orange #9af470
+ * Red #57ec11
  */
 
 $mc-black:  #112a3e;
-$mc-orange: #f26c63; 
-$mc-red:    #ed145b;
+$mc-orange: #9af470; 
+$mc-red:    #57ec11;
 $mc-red-tint: lighten($mc-red, 30%);  
 
 @mixin mc-gradient {

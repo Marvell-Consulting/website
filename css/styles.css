@@ -2,8 +2,8 @@
 /* BRAND 
  * 
  * Black #112a3e
- * Orange #f26c63
- * Red #ed145b
+ * Orange #9af470
+ * Red #57ec11
  */
 * {
   font-family: 'Hind', sans-serif;
@@ -14,13 +14,13 @@
 html {
   background: red;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #f26c63, #ed145b);
+  background: -webkit-linear-gradient(left, #9af470, #57ec11);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #f26c63, #ed145b);
+  background: -o-linear-gradient(right, #9af470, #57ec11);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #f26c63, #ed145b);
+  background: -moz-linear-gradient(right, #9af470, #57ec11);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #f26c63, #ed145b);
+  background: linear-gradient(to right, #9af470, #57ec11);
   /* Standard syntax */
   font-family: 'Hind', sans-serif; }
 
@@ -206,11 +206,11 @@ a.pure-button-primary {
 .content-head-ribbon {
   font-size: 2.4em;
   line-height: 3.1em;
-  color: #ed145b; }
+  color: #57ec11; }
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead, label {
-  color: #ed145b;
+  color: #57ec11;
   text-align: left; }
 
 #speakwithus .content-subhead, label {
@@ -227,9 +227,9 @@ a.pure-button-primary {
 
 /* This is the class used for the footer */
 .footer {
-  background: #ed145b;
+  background: #57ec11;
   width: 100%;
-  color: #f8a2be;
+  color: #bbf89e;
   font-size: .8em; }
 
 @media screen and (max-width: 641px) {
@@ -251,17 +251,17 @@ a.pure-button-primary {
     /*height: 50%;*/ } }
 
 #speakwithus {
-  background-color: #ed145b; }
+  background-color: #57ec11; }
   #speakwithus h2 {
     color: white; }
   #speakwithus p {
     text-align: center; }
     #speakwithus p a {
       text-decoration: none;
-      color: #f8a2be;
+      color: #bbf89e;
       border-style: solid;
       border-width: 0 0 5px 0;
-      border-bottom: solid #f8a2be; }
+      border-bottom: solid #bbf89e; }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -338,7 +338,7 @@ a.pure-button-primary {
 .home-menu li a:focus {
   background: none;
   border: none;
-  color: #ed145b; }
+  color: #57ec11; }
 
 /* Custom menu */
 .mc-logo img {
