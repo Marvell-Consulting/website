@@ -198,12 +198,12 @@ label {
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
   @include h2;
-    color: $mc-red;
+    color: $mc-orange;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead, label {
-    color: $mc-red;
+    color: $mc-orange;
     text-align: center;
 }
 
