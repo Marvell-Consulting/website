@@ -1,0 +1,489 @@
+$mc-black:  #112a3e;
+$mc-orange: #6ab853;
+$mc-red:    #3a8448;
+$mc-red-tint: lighten($mc-red, 30%);
+
+@mixin mc-gradient {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, $mc-orange ,$mc-red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, $mc-orange, $mc-red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, $mc-orange, $mc-red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, $mc-orange ,$mc-red); /* Standard syntax */
+}
+
+* {
+  font-family: 'Hind', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+    @include mc-gradient
+    font-family: 'Hind', sans-serif;
+}
+
+body {
+    line-height: 1.7em;
+    color: $mc-black;
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+}
+p  { font-size: 19px; line-height: 30px; font-weight: 300;}
+h1 { font-size: 3em; line-height: 4em;}
+h2 { font-size: 2.4em; line-height: 3.1em;}
+h3 { font-size: 1.6em; line-height: 1.8em;}
+h4 { font-size: 1.4em; line-height: 1.5em;}
+h5 { font-size: 1.2em; line-height: 1.4em;}
+h6 { font-size: 1em; line-height: 1.5em;}
+
+@mixin h1 { font-size: 3em; line-height: 4em; font-weight: 700;}
+@mixin h2 { font-size: 2.4em; line-height: 3.1em;}
+@mixin h3 { font-size: 1.6em; line-height: 1.8em;}
+@mixin h4 { font-size: 1.4em; line-height: 1.5em;}
+@mixin h5 { font-size: 1.2em; line-height: 1.4em;}
+@mixin h6 { font-size: 1em; line-height: 1.5em;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+.pure-menu-list {
+    text-transform: uppercase;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.xl-box {
+  padding: 1em 2.5em;
+}
+
+.is-center {
+    text-align: center;
+}
+
+
+
+/*
+ * -- PURE FORM STYLES --
+ * Style the form inputs and labels
+ */
+.pure-form label {
+    margin: 1em 0 0;
+    font-weight: 700;
+    font-size: 100%;
+}
+
+.pure-form input[type],
+.pure-form textarea {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+
+.splash-container {
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+    text-align: center;
+}
+.splash-container::after {
+    content: "";
+    background-image: url(../img/background-data2.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.07;
+}
+
+.splash {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splash-head {
+  @include h1;
+    margin-top: 50px;
+    border-radius: 5px;
+    line-height: 1em;
+    font-weight: 700;
+    color: white;
+}
+
+.splash-subhead {
+    color: $mc-black;
+    padding: 0 1.5em;
+    letter-spacing: 0.05em;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-transform: inherit;
+}
+
+
+.content-wrapper {
+    position: absolute;
+    top: 700px;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+
+}
+
+.content {
+    padding: 3em 1em 3em;
+}
+
+.content-head-ribbon {
+  @include h2;
+    color: $mc-orange;
+}
+
+.content-subhead, label {
+    color: $mc-orange;
+    text-align: center;
+}
+
+#speakwithus .content-subhead, label {
+    text-align: left;
+}
+
+.content-subhead i {
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+
+.ribbon {
+    background: $mc-black;
+    color: white;
+}
+
+.footer {
+    background: $mc-red;
+    width: 100%;
+    color: $mc-red-tint;
+    font-size: .8em;
+}
+
+@media screen and (max-width: 641px) {
+    .splash-container {
+        height: 500px;
+        margin-top: 50px;
+    }
+    .splash-container::after {
+      background-size: contain;
+      background-position: center;
+    }
+    .content-wrapper {
+        top: 600px
+    }
+    .splash {
+        margin-top: 150px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 48em) {
+    .splash {
+      margin-top: 50px;
+      width: 60%;
+    }
+
+    .splash-container {
+      width: 100%;
+      position: relative;
+      margin-top: 115px;
+      height: 400px;
+    }
+
+    .splash-container::after {
+      background-size: contain;
+      background-position: center;
+    }
+
+    .content-wrapper {
+      top: 515px;
+    }
+}
+
+#speakwithus {
+  background-color: $mc-red;
+  h2 {
+    color: white;
+  }
+  p {
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $mc-red-tint;
+      border-style: solid;
+      border-width: 0 0 5px 0;
+      border-bottom: solid $mc-red-tint;
+    }
+  }
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ */
+@media (min-width: 48em) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .splash {
+      margin-top: 120px;
+      width: 70%;
+    }
+
+    .splash-container {
+      position: relative;
+      margin-top: 115px;
+      height: 500px;
+    }
+
+    .splash-container::after {
+      background-size: contain;
+      background-position: center;
+    }
+
+    .content-wrapper {
+      top: 615px;
+    }
+
+    .home-menu {
+        text-align: left;
+    }
+    .home-menu ul {
+        float: right;
+    }
+
+    .splash-head {
+      font-size: 2.5em;
+    }
+
+    .splash-subhead {
+        font-size: 2em;
+        display: block;
+    }
+
+    .l-box-lrg {
+        border: none;
+    }
+
+}
+
+@media (min-width: 70em) {
+
+    .splash {
+      margin-top: 120px;
+      width: 50%;
+    }
+
+    .splash-container {
+      position: relative;
+      margin-top: 115px;
+      height: 600px;
+    }
+
+    .splash-container::after {
+      background-size: contain;
+      background-position: center;
+    }
+
+    .content-wrapper {
+      top: 715px;
+    }
+}
+
+@media (min-width: 90em) {
+
+    .splash {
+      margin-top: 120px;
+      width: 40%;
+    }
+
+    .splash-container {
+      position: relative;
+      margin-top: 115px;
+      height: 700px;
+    }
+
+    .splash-container::after {
+      background-size: contain;
+      background-position: center;
+    }
+
+    .content-wrapper {
+      top: 815px;
+    }
+}
+
+/*
+ * -- MENU STYLES --
+ */
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.1);
+}
+.home-menu {
+    background: #112a3e;
+}
+
+.header {
+    border-bottom: 2px solid #fff;
+}
+
+.pure-menu.pure-menu-fixed {
+    border-bottom: none;
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 800;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-heading em {
+    font-style: normal;
+    font-weight: 200;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #fff;
+}
+.home-menu li {
+    padding-top: 30px;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: $mc-red;
+}
+
+
+/* Custom menu */
+.mc-logo img {
+    width: 250px;
+    display: block;
+    float: left;
+}
+.custom-wrapper {
+  margin-bottom: 1em;
+  -webkit-font-smoothing: antialiased;
+  height: 5em;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+  height: 12em;
+  .pure-menu-link {
+    font-size: .9em;
+    padding-top: 0;
+  }
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+.custom-toggle .bar {
+  background-color: #fff;
+  display: block;
+  width: 28px;
+  height: 4px;
+  border-radius: 100px;
+  position: absolute;
+  top: 37px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+  .custom-menu-3 {
+    text-align: left;
+  }
+
+  .custom-toggle {
+    display: block;
+  }
+
+}

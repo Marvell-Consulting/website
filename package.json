@@ -1,0 +1,28 @@
+{
+  "name": "marvell-consulting-website",
+  "version": "1.0.0",
+  "description": "Pure CSS Layout Examples ========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easternbloc/marvell-consulting-website.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/easternbloc/marvell-consulting-website/issues"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-sass": "^1.2.0"
+  },
+  "homepage": "https://github.com/easternbloc/marvell-consulting-website#readme",
+  "dependencies": {
+    "express": "^4.15.5"
+  }
+}
