@@ -21,6 +21,8 @@
     "grunt-contrib-sass": "^1.0.0",
     "grunt-sass": "^1.2.0"
   },
-  "homepage": "https://github.com/easternbloc/marvell-consulting-website#readme"
-
+  "homepage": "https://github.com/easternbloc/marvell-consulting-website#readme",
+  "dependencies": {
+    "express": "^4.15.5"
+  }
 }
