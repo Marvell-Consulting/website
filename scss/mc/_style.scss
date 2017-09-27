@@ -17,6 +17,7 @@ $mc-red-darker: darken($mc-red, 20%);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-variant-ligatures: no-common-ligatures;
 }
 html {
     @include mc-gradient
@@ -102,9 +103,11 @@ label {
 }
 
 .mc-button {
+  display: inline-block;
   font-weight: 700;
   text-transform: uppercase; 
   padding: .5em 1em;
+  margin-top: 1em;
   border: 1px solid darken($mc-red, 10%);
   border: transparent;
   background-color: $mc-red-darker;
@@ -188,6 +191,7 @@ label {
 .content-subhead, label {
     color: $mc-orange;
     text-align: center;
+  line-height: 1.5em;
 }
 
 #speakwithus .content-subhead, label {
@@ -249,6 +253,49 @@ label {
     .content-wrapper {
       top: 515px;
     }
+}
+
+
+#toolsweuse {
+  background-color: $mc-red-tint;
+  h2 {
+    color: white;
+  }
+  p {
+    text-align: center;
+    a {
+      background-color: darken($mc-red, 20%);
+      text-decoration: none;
+      color: white;
+      border-style: solid;
+      border-width: 0 0 5px 0;
+      border-bottom: solid darken($mc-red, 10%);
+      &:hover{
+        background-color: darken($mc-red, 25%);
+      }
+    }
+  }
+}
+
+#differenceswemade {
+  background-color: white;
+  h2 {
+    color: $mc-red;
+  }
+  p {
+    text-align: center;
+    a {
+      background-color: darken($mc-red, 20%);
+      text-decoration: none;
+      color: white;
+      border-style: solid;
+      border-width: 0 0 5px 0;
+      border-bottom: solid darken($mc-red, 10%);
+      &:hover{
+        background-color: darken($mc-red, 25%);
+      }
+    }
+  }
 }
 
 #speakwithus {

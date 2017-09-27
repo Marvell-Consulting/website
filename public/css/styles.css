@@ -3,7 +3,8 @@
   font-family: 'Hind', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-variant-ligatures: no-common-ligatures; }
 
 html {
   background: red;
@@ -100,9 +101,11 @@ label {
   margin-bottom: 1em; }
 
 .mc-button {
+  display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
   padding: .5em 1em;
+  margin-top: 1em;
   border: 1px solid #1e8449;
   border: transparent;
   background-color: #145b32;
@@ -177,7 +180,8 @@ label {
 
 .content-subhead, label {
   color: #2ecc71;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.5em; }
 
 #speakwithus .content-subhead, label {
   text-align: left; }
@@ -222,6 +226,38 @@ label {
     background-position: center; }
   .content-wrapper {
     top: 515px; } }
+
+#toolsweuse {
+  background-color: #89e5b0; }
+  #toolsweuse h2 {
+    color: white; }
+  #toolsweuse p {
+    text-align: center; }
+    #toolsweuse p a {
+      background-color: #145b32;
+      text-decoration: none;
+      color: white;
+      border-style: solid;
+      border-width: 0 0 5px 0;
+      border-bottom: solid #1e8449; }
+      #toolsweuse p a:hover {
+        background-color: #104627; }
+
+#differenceswemade {
+  background-color: white; }
+  #differenceswemade h2 {
+    color: #27ae60; }
+  #differenceswemade p {
+    text-align: center; }
+    #differenceswemade p a {
+      background-color: #145b32;
+      text-decoration: none;
+      color: white;
+      border-style: solid;
+      border-width: 0 0 5px 0;
+      border-bottom: solid #1e8449; }
+      #differenceswemade p a:hover {
+        background-color: #104627; }
 
 #speakwithus {
   background-color: #27ae60; }
