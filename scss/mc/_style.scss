@@ -1,7 +1,8 @@
 $mc-black:  #112a3e;
-$mc-orange: #6ab853;
-$mc-red:    #3a8448;
+$mc-orange: #2ecc71;
+$mc-red:    #27ae60;
 $mc-red-tint: lighten($mc-red, 30%);
+$mc-red-darker: darken($mc-red, 20%);
 
 @mixin mc-gradient {
   background: red; /* For browsers that do not support gradients */
@@ -100,7 +101,20 @@ label {
     margin-bottom: 1em;
 }
 
-
+.mc-button {
+  font-weight: 700;
+  text-transform: uppercase; 
+  padding: .5em 1em;
+  border: 1px solid darken($mc-red, 10%);
+  border: transparent;
+  background-color: $mc-red-darker;
+  text-decoration: none;
+  border-radius: 2px;
+  color: white;
+  p a {
+    color: white;
+  }
+}
 
 .splash-container {
     z-index: 1;
@@ -245,11 +259,15 @@ label {
   p {
     text-align: center;
     a {
+      background-color: darken($mc-red, 20%);
       text-decoration: none;
-      color: $mc-red-tint;
+      color: white;
       border-style: solid;
       border-width: 0 0 5px 0;
-      border-bottom: solid $mc-red-tint;
+      border-bottom: solid darken($mc-red, 10%);
+      &:hover{
+        background-color: darken($mc-red, 25%);
+      }
     }
   }
 }
@@ -356,7 +374,6 @@ label {
  */
 
 .home-menu {
-    padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.1);
 }
@@ -420,10 +437,12 @@ label {
 }
 
 .custom-wrapper.open {
-  height: 12em;
+  height: 20em;
+  margin-bottom: 0em;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.75);
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.75);
   .pure-menu-link {
-    font-size: .9em;
-    padding-top: 0;
   }
 }
 
@@ -477,6 +496,18 @@ label {
 }
 
 @media (max-width: 47.999em) {
+
+  .pure-menu-horizontal .pure-menu-heading {
+    display: block !important;
+  }
+
+  .pure-menu-horizontal .pure-menu-item {
+    display: block !important;
+  }
+
+  .home-menu li {
+    padding-top: 10px;
+  }
 
   .custom-menu-3 {
     text-align: left;
