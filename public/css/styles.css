@@ -183,6 +183,9 @@ label {
   text-align: center;
   line-height: 1.5em; }
 
+#whowehelped img {
+  width: 75%; }
+
 #speakwithus .content-subhead, label {
   text-align: left; }
 
