@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/easternbloc/marvell-consulting-website#readme",
   "dependencies": {
-    "express": "^4.15.5"
+    "churchill": "^1.2.0",
+    "express": "^4.15.5",
+    "winston": "^2.3.1"
   }
 }
