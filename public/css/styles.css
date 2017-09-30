@@ -183,6 +183,14 @@ label {
   text-align: center;
   line-height: 1.5em; }
 
+#whatwedo p {
+  text-align: center; }
+
+#whowehelped p {
+  text-align: center; }
+  #whowehelped p a {
+    color: #27ae60; }
+
 #whowehelped img {
   width: 75%; }
 
@@ -348,6 +356,9 @@ label {
 
 .header {
   border-bottom: 2px solid #fff; }
+
+.pure-menu-link {
+  padding: .5em 1em .5em 0.5em !important; }
 
 .pure-menu.pure-menu-fixed {
   -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
