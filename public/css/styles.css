@@ -83,6 +83,9 @@ label {
 .is-center {
   text-align: center; }
 
+.logo-thin {
+  font-weight: 100; }
+
 /*
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
