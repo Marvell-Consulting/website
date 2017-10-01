@@ -1,7 +1,8 @@
 $mc-black:  #112a3e;
-$mc-orange: #6ab853;
-$mc-red:    #3a8448;
+$mc-orange: #2ecc71;
+$mc-red:    #27ae60;
 $mc-red-tint: lighten($mc-red, 30%);
+$mc-red-darker: darken($mc-red, 20%);
 
 @mixin mc-gradient {
   background: red; /* For browsers that do not support gradients */
@@ -16,6 +17,7 @@ $mc-red-tint: lighten($mc-red, 30%);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-variant-ligatures: no-common-ligatures;
 }
 html {
     @include mc-gradient
@@ -79,6 +81,10 @@ label {
     text-align: center;
 }
 
+.logo-thin {
+  font-weight: 100;
+}
+
 
 
 /*
@@ -100,7 +106,22 @@ label {
     margin-bottom: 1em;
 }
 
-
+.mc-button {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  margin-top: 1em;
+  border: 1px solid darken($mc-red, 10%);
+  border: transparent;
+  background-color: $mc-red-darker;
+  text-decoration: none;
+  border-radius: 2px;
+  color: white;
+  p a {
+    color: white;
+  }
+}
 
 .splash-container {
     z-index: 1;
@@ -174,6 +195,25 @@ label {
 .content-subhead, label {
     color: $mc-orange;
     text-align: center;
+  line-height: 1.5em;
+}
+
+#whatwedo {
+  p {
+    text-align: center;
+  }
+}
+
+#whowehelped {
+  p {
+    text-align: center;
+    a {
+      color: $mc-red;
+    }
+  }
+  img {
+    width: 75%;
+  }
 }
 
 #speakwithus .content-subhead, label {
@@ -237,6 +277,49 @@ label {
     }
 }
 
+
+#toolsweuse {
+  background-color: $mc-red-tint;
+  h2 {
+    color: white;
+  }
+  p {
+    text-align: center;
+    a {
+      background-color: darken($mc-red, 20%);
+      text-decoration: none;
+      color: white;
+      border-style: solid;
+      border-width: 0 0 5px 0;
+      border-bottom: solid darken($mc-red, 10%);
+      &:hover{
+        background-color: darken($mc-red, 25%);
+      }
+    }
+  }
+}
+
+#differenceswemade {
+  background-color: white;
+  h2 {
+    color: $mc-red;
+  }
+  p {
+    text-align: center;
+    a {
+      background-color: darken($mc-red, 20%);
+      text-decoration: none;
+      color: white;
+      border-style: solid;
+      border-width: 0 0 5px 0;
+      border-bottom: solid darken($mc-red, 10%);
+      &:hover{
+        background-color: darken($mc-red, 25%);
+      }
+    }
+  }
+}
+
 #speakwithus {
   background-color: $mc-red;
   h2 {
@@ -245,11 +328,15 @@ label {
   p {
     text-align: center;
     a {
+      background-color: darken($mc-red, 20%);
       text-decoration: none;
-      color: $mc-red-tint;
+      color: white;
       border-style: solid;
       border-width: 0 0 5px 0;
-      border-bottom: solid $mc-red-tint;
+      border-bottom: solid darken($mc-red, 10%);
+      &:hover{
+        background-color: darken($mc-red, 25%);
+      }
     }
   }
 }
@@ -356,7 +443,6 @@ label {
  */
 
 .home-menu {
-    padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.1);
 }
@@ -367,8 +453,13 @@ label {
 .header {
     border-bottom: 2px solid #fff;
 }
-
+.pure-menu-link {
+    padding: .5em 1em .5em 0.5em !important;
+}
 .pure-menu.pure-menu-fixed {
+    -webkit-box-shadow: 0 4px 2px -2px rgba(darken($mc-black, 20%), .2);
+    -moz-box-shadow: 0 4px 2px -2px rgba(darken($mc-black, 20%), .2);
+    box-shadow: 0 4px 2px -2px rgba(darken($mc-black, 20%), .2);
     border-bottom: none;
     z-index: 4;
 }
@@ -420,10 +511,12 @@ label {
 }
 
 .custom-wrapper.open {
-  height: 12em;
+  height: 20em;
+  margin-bottom: 0em;
+  -webkit-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.75);
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.75);
   .pure-menu-link {
-    font-size: .9em;
-    padding-top: 0;
   }
 }
 
@@ -477,6 +570,18 @@ label {
 }
 
 @media (max-width: 47.999em) {
+
+  .pure-menu-horizontal .pure-menu-heading {
+    display: block !important;
+  }
+
+  .pure-menu-horizontal .pure-menu-item {
+    display: block !important;
+  }
+
+  .home-menu li {
+    padding-top: 10px;
+  }
 
   .custom-menu-3 {
     text-align: left;
