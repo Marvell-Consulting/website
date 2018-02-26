@@ -55,6 +55,10 @@ label {
     color: #34495e;
 }
 
+a {
+  color: $mc-red;
+}
+
 .pure-menu-list {
     text-transform: uppercase;
 }
@@ -277,67 +281,62 @@ label {
     }
 }
 
+.button-link {
+  background-color: darken($mc-red, 20%);
+  text-decoration: none;
+  color: white;
+  border-style: solid;
+  border-width: 0 0 5px 0;
+  border-bottom: solid darken($mc-red, 10%);
+  &:hover{
+    background-color: darken($mc-red, 25%);
+  }
+}
 
-#toolsweuse {
-  background-color: $mc-red-tint;
+.page-section {
   h2 {
     color: white;
   }
   p {
     text-align: center;
-    a {
-      background-color: darken($mc-red, 20%);
-      text-decoration: none;
-      color: white;
-      border-style: solid;
-      border-width: 0 0 5px 0;
-      border-bottom: solid darken($mc-red, 10%);
-      &:hover{
-        background-color: darken($mc-red, 25%);
-      }
+    a.mc-button {
+      @extend .button-link;
     }
   }
 }
 
+#toolsweuse {
+  @extend .page-section;
+  background-color: $mc-red-tint;
+}
+
 #differenceswemade {
+  @extend .page-section;
   background-color: white;
   h2 {
     color: $mc-red;
-  }
-  p {
-    text-align: center;
-    a {
-      background-color: darken($mc-red, 20%);
-      text-decoration: none;
-      color: white;
-      border-style: solid;
-      border-width: 0 0 5px 0;
-      border-bottom: solid darken($mc-red, 10%);
-      &:hover{
-        background-color: darken($mc-red, 25%);
-      }
-    }
   }
 }
 
 #speakwithus {
   background-color: $mc-red;
-  h2 {
-    color: white;
-  }
+  @extend .page-section;
+}
+
+#workwithus {
+  @extend .page-section;
+  background-color: $mc-red-tint;
   p {
-    text-align: center;
-    a {
-      background-color: darken($mc-red, 20%);
-      text-decoration: none;
-      color: white;
-      border-style: solid;
-      border-width: 0 0 5px 0;
-      border-bottom: solid darken($mc-red, 10%);
-      &:hover{
-        background-color: darken($mc-red, 25%);
-      }
-    }
+    color: $mc-black;
+  }
+}
+
+.job {
+  background: white;
+  padding: 5em 0;
+  h2 {
+    line-height: 1;
+    font-size: 1.5em;
   }
 }
 
