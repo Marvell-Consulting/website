@@ -5,7 +5,7 @@ $mc-red-tint: lighten($mc-red, 30%);
 $mc-red-darker: darken($mc-red, 20%);
 
 @mixin mc-gradient {
-  background: red; /* For browsers that do not support gradients */
+  background: $mc-orange; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, $mc-orange ,$mc-red); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, $mc-orange, $mc-red); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, $mc-orange, $mc-red); /* For Firefox 3.6 to 15 */
@@ -87,6 +87,7 @@ a {
 
 .logo-thin {
   font-weight: 100;
+  margin-left: -0.2em;
 }
 
 
@@ -159,12 +160,13 @@ a {
 }
 
 .splash-head {
-  @include h1;
+    @include h1;
     margin-top: 50px;
     border-radius: 5px;
     line-height: 1em;
     font-weight: 700;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .splash-subhead {
@@ -188,7 +190,7 @@ a {
 }
 
 .content {
-    padding: 3em 1em 3em;
+    padding: 1em;
 }
 
 .content-head-ribbon {
@@ -429,7 +431,7 @@ a {
     }
 
     .splash-container {
-      height: 600px;
+      height: 660px;
     }
 
     .splash-container::after {
@@ -437,7 +439,7 @@ a {
     }
 
     .content-wrapper {
-      top: 700px;
+      top: 660px;
     }
 
     .splash-head {
