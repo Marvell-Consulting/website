@@ -409,14 +409,6 @@ a {
       top: 525px;
     }
 
-    .home-menu {
-      text-align: left;
-
-      ul {
-        float: right;
-      }
-    }
-
     .splash-head {
       font-size: 2em;
     }
@@ -429,6 +421,16 @@ a {
       border: none;
     }
 
+}
+
+@media (min-width: 60em) {
+  .home-menu {
+    text-align: left;
+
+    ul {
+      float: right;
+    }
+  }
 }
 
 @media (min-width: 70em) {
@@ -623,7 +625,7 @@ a {
   transform: rotate(-45deg);
 }
 
-@media (max-width: 47.999em) {
+@media (max-width: 59.999em) {
 
   .pure-menu-horizontal .pure-menu-heading {
     display: block !important;
@@ -643,6 +645,12 @@ a {
 
   .custom-toggle {
     display: block;
+  }
+
+  .header {
+    .pure-u-md-2-3 {
+      width: 100%
+    }
   }
 
 }
