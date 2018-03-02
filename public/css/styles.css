@@ -152,9 +152,11 @@ a {
   margin-right: auto; }
   .splash .discovery, .splash .alpha, .splash .beta, .splash .live {
     color: white;
-    padding: 0 10px;
+    padding: 10px;
     font-weight: 500;
-    font-size: 2em; }
+    font-size: 1.5em;
+    line-height: 2.5em;
+    white-space: nowrap; }
   .splash .discovery {
     background: #912b88; }
   .splash .alpha {
@@ -183,9 +185,8 @@ a {
   color: #112a3e;
   letter-spacing: 0.05em;
   font-size: 1.3em;
-  line-height: 1.5em;
-  text-transform: inherit;
-  padding-bottom: 0.5em; }
+  line-height: 1em;
+  text-transform: inherit; }
 
 .content-wrapper {
   position: absolute;
@@ -237,21 +238,20 @@ a {
 
 @media screen and (max-width: 641px) {
   .splash-container {
-    height: 450px;
+    height: 500px;
     margin-top: 10px; }
 
   .splash-container::after {
     background: none; }
 
   .content-wrapper {
-    top: 505px; }
+    top: 555px; }
 
   .splash {
     margin-top: 150px; }
-    .splash .splash-subhead {
-      padding-bottom: 0; }
     .splash .discovery, .splash .alpha, .splash .beta, .splash .live {
-      font-size: 1em; }
+      font-size: 0.9em;
+      line-height: 3em; }
     .splash .typed-cursor {
       font-size: 1.5em;
       margin-left: -0.5em; } }

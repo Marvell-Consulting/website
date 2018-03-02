@@ -10,6 +10,12 @@
         <p class="splash-subhead">
             help clients navigate the stages of digital transformation through
         </p>
+        <div class="phases-to-animate splash-subhead">
+            <div>
+                <span class="discovery">Discovery ✔</span> <span class="alpha">Alpha ✔</span> <span class="beta">Beta ✔</span> <span class="live">Live ✔</span>
+            </div>
+        </div>
+
         <span class="element splash-subhead"></span>
     </div>
 </div>
@@ -186,16 +192,9 @@
 
 <script>
   var typed = new Typed('.element', {
-    strings: [
-        '<span class="discovery">Discovery ✔</span>',
-        '<span class="alpha">Alpha ✔</span>',
-        '<span class="beta">Beta ✔</span>',
-        '<span class="live">Live ✔</span>',
-        ],
+    stringsElement: '.phases-to-animate',
     typeSpeed: 90,
-    backSpeed: 60,
-    loop: true,
-    loopCount: 2,
+    backSpeed: 30,
     showCursor: false
   });
 </script>
