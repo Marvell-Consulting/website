@@ -157,6 +157,35 @@ a {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+
+    .discovery, .alpha, .beta, .live {
+      color: white;
+      padding: 10px;
+      font-weight: 500;
+      font-size: 2em;
+    }
+
+    .discovery {
+      background: rgba(145,43,136,1);
+    }
+
+    .alpha {
+      background: rgba(214,55,128,1);
+    }
+
+    .beta {
+      background: rgba(246,118,52,1);
+    }
+
+    .live {
+      background: rgba(134,153,74,1);
+    }
+
+    .typed-cursor {
+      font-size: 3.5em;
+      color: white;
+      margin-left: -0.25em;
+    }
 }
 
 .splash-head {
@@ -171,13 +200,12 @@ a {
 
 .splash-subhead {
     color: $mc-black;
-    padding: 0 1.5em;
     letter-spacing: 0.05em;
     font-size: 1.3em;
     line-height: 1.5em;
     text-transform: inherit;
+    padding-bottom: 0.5em;
 }
-
 
 .content-wrapper {
     position: absolute;
@@ -245,17 +273,30 @@ a {
 
 @media screen and (max-width: 641px) {
     .splash-container {
-        height: 400px;
+        height: 450px;
         margin-top: 10px;
     }
     .splash-container::after {
       background: none;
     }
     .content-wrapper {
-        top: 455px
+        top: 505px
     }
     .splash {
         margin-top: 150px;
+
+        .splash-subhead {
+          padding-bottom: 0;
+        }
+
+        .discovery, .alpha, .beta, .live {
+          font-size: 1em;
+        }
+
+        .typed-cursor {
+          font-size: 1.5em;
+          margin-left: -0.5em;
+        }
     }
 }
 
@@ -384,7 +425,6 @@ a {
 
     .splash-subhead {
       font-size: 1.5em;
-      display: block;
     }
 
     .l-box-lrg {
@@ -447,7 +487,7 @@ a {
     }
 
     .splash-subhead {
-      font-size: 2em;
+      font-size: 1.5em;
     }
 }
 
