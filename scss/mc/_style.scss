@@ -160,10 +160,10 @@ a {
 
     .discovery, .alpha, .beta, .live {
       color: white;
-      padding: 10px;
+      padding: 0 10px;
       font-weight: 500;
       font-size: 1.5em;
-      line-height: 2.5em;
+      line-height: 2em;
       white-space: nowrap;
     }
 
@@ -274,21 +274,21 @@ a {
 
 @media screen and (max-width: 641px) {
     .splash-container {
-        height: 500px;
+        height: 450px;
         margin-top: 10px;
     }
     .splash-container::after {
       background: none;
     }
     .content-wrapper {
-        top: 555px
+        top: 475px
     }
     .splash {
         margin-top: 150px;
 
         .discovery, .alpha, .beta, .live {
           font-size: 0.9em;
-          line-height: 3em;
+          line-height: 2em;
         }
 
         .typed-cursor {
