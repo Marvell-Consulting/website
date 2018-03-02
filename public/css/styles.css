@@ -152,7 +152,7 @@ a {
   margin-right: auto; }
   .splash .discovery, .splash .alpha, .splash .beta, .splash .live {
     color: white;
-    padding: 10px;
+    padding: 0 10px;
     font-weight: 500;
     font-size: 2em; }
   .splash .discovery {
