@@ -8,8 +8,15 @@
     <div class="splash">
         <h1 class="splash-head">Marvell <span class="logo-thin">Consulting<span></h1>
         <p class="splash-subhead">
-            help clients navigate their way through the stages of digital transformation.
+            help clients navigate the stages of digital transformation through
         </p>
+        <div class="phases-to-animate splash-subhead">
+            <div>
+                <span class="discovery">Discovery ✔</span> <span class="alpha">Alpha ✔</span> <span class="beta">Beta ✔</span> <span class="live">Live ✔</span>
+            </div>
+        </div>
+
+        <span class="element splash-subhead"></span>
     </div>
 </div>
 
@@ -180,7 +187,17 @@
 </div>
 
 
-<script src="/public/js/menu.js"></script> <!-- Resource jQuery -->
+<script src="/public/js/menu.js" type="text/javascript"></script>
+<script src="/public/js/typed.min.js" type="text/javascript"></script>
+
+<script>
+  var typed = new Typed('.element', {
+    stringsElement: '.phases-to-animate',
+    typeSpeed: 90,
+    backSpeed: 30,
+    showCursor: false
+  });
+</script>
 
 </body>
 </html>

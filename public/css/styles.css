@@ -150,6 +150,25 @@ a {
   width: 80%;
   margin-left: auto;
   margin-right: auto; }
+  .splash .discovery, .splash .alpha, .splash .beta, .splash .live {
+    color: white;
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 2em;
+    white-space: nowrap; }
+  .splash .discovery {
+    background: #912b88; }
+  .splash .alpha {
+    background: #d63780; }
+  .splash .beta {
+    background: #f67634; }
+  .splash .live {
+    background: #86994a; }
+  .splash .typed-cursor {
+    font-size: 3.5em;
+    color: white;
+    margin-left: -0.25em; }
 
 .splash-head {
   font-size: 3em;
@@ -164,10 +183,9 @@ a {
 
 .splash-subhead {
   color: #112a3e;
-  padding: 0 1.5em;
   letter-spacing: 0.05em;
   font-size: 1.3em;
-  line-height: 1.5em;
+  line-height: 1em;
   text-transform: inherit; }
 
 .content-wrapper {
@@ -220,17 +238,23 @@ a {
 
 @media screen and (max-width: 641px) {
   .splash-container {
-    height: 400px;
+    height: 450px;
     margin-top: 10px; }
 
   .splash-container::after {
     background: none; }
 
   .content-wrapper {
-    top: 455px; }
+    top: 475px; }
 
   .splash {
-    margin-top: 150px; } }
+    margin-top: 150px; }
+    .splash .discovery, .splash .alpha, .splash .beta, .splash .live {
+      font-size: 0.9em;
+      line-height: 2em; }
+    .splash .typed-cursor {
+      font-size: 1.5em;
+      margin-left: -0.5em; } }
 @media (min-width: 641px) and (max-width: 48em) {
   .splash {
     margin-top: 50px;
@@ -318,8 +342,7 @@ a {
     font-size: 2em; }
 
   .splash-subhead {
-    font-size: 1.5em;
-    display: block; }
+    font-size: 1.5em; }
 
   .l-box-lrg {
     border: none; } }
@@ -362,7 +385,7 @@ a {
     font-size: 2.5em; }
 
   .splash-subhead {
-    font-size: 2em; } }
+    font-size: 1.5em; } }
 /*
  * -- MENU STYLES --
  */
