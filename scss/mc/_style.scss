@@ -32,14 +32,14 @@ body {
 }
 p, li  { font-size: 19px; line-height: 30px; font-weight: 300;}
 h1 { font-size: 3em; line-height: 4em;}
-h2 { font-size: 2.4em; line-height: 3.1em;}
+h2 { font-size: 2.4em; line-height: 1em;}
 h3 { font-size: 1.6em; line-height: 1.8em;}
 h4 { font-size: 1.4em; line-height: 1.5em;}
 h5 { font-size: 1.2em; line-height: 1.4em;}
 h6 { font-size: 1em; line-height: 1.5em;}
 
 @mixin h1 { font-size: 3em; line-height: 4em; font-weight: 700;}
-@mixin h2 { font-size: 2.4em; line-height: 3.1em;}
+@mixin h2 { font-size: 2.4em; line-height: 1em;}
 @mixin h3 { font-size: 1.6em; line-height: 1.8em;}
 @mixin h4 { font-size: 1.4em; line-height: 1.5em;}
 @mixin h5 { font-size: 1.2em; line-height: 1.4em;}
@@ -223,7 +223,7 @@ a {
 }
 
 .content-head-ribbon {
-  @include h2;
+    @include h2;
     color: $mc-orange;
 }
 
@@ -465,10 +465,6 @@ a {
 }
 
 @media (min-width: 90em) {
-
-    .splash {
-      width: 40%;
-    }
 
     .splash-container {
       height: 660px;

@@ -36,7 +36,7 @@ h1 {
 
 h2 {
   font-size: 2.4em;
-  line-height: 3.1em; }
+  line-height: 1em; }
 
 h3 {
   font-size: 1.6em;
@@ -201,7 +201,7 @@ a {
 
 .content-head-ribbon {
   font-size: 2.4em;
-  line-height: 3.1em;
+  line-height: 1em;
   color: #2ecc71; }
 
 .content-subhead, label {
@@ -369,9 +369,6 @@ a {
   .splash-subhead {
     font-size: 1.5em; } }
 @media (min-width: 90em) {
-  .splash {
-    width: 40%; }
-
   .splash-container {
     height: 660px; }
 
