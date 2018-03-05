@@ -373,13 +373,13 @@ a {
     width: 40%; }
 
   .splash-container {
-    height: 760px; }
+    height: 660px; }
 
   .splash-container::after {
     background-size: 80%; }
 
   .content-wrapper {
-    top: 760px; }
+    top: 660px; }
 
   .splash-head {
     font-size: 2.5em; }
