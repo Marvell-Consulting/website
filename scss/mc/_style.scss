@@ -270,6 +270,10 @@ a {
     width: 100%;
     color: $mc-red-tint;
     font-size: .8em;
+
+    a {
+      color: $mc-red-tint;
+    }
 }
 
 @media screen and (max-width: 641px) {
