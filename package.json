@@ -1,7 +1,7 @@
 {
   "name": "marvell-consulting-website",
   "version": "1.0.0",
-  "description": "Pure CSS Layout Examples ========================",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
