@@ -1,6 +1,10 @@
 module.exports = [
   {
-    id: 'interaction-designer',
-    title: 'Interaction Designer'
+    id: 'content-designer',
+    title: 'Content Designer - Contract'
+  },
+  {
+    id: 'user-researcher',
+    title: 'User Researcher'
   }
 ];
