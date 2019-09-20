@@ -150,8 +150,8 @@ h1.logo-thin {
 
 .splash {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  max-width: 995px; }
   .splash .discovery, .splash .alpha, .splash .beta, .splash .live {
     color: white;
     padding: 0 10px;
@@ -222,8 +222,8 @@ h1.logo-thin {
 #whowehelped img {
   width: 75%; }
 
-#speakwithus .content-subhead, label {
-  text-align: left; }
+#speakwithus a {
+  color: white; }
 
 .content-subhead i {
   margin-bottom: 10px;
@@ -257,6 +257,9 @@ h1.logo-thin {
 .page-section p, #toolsweuse p, #differenceswemade p, #speakwithus p, #workwithus p {
   text-align: center; }
 
+.content h2 {
+  margin-bottom: 0.25em; }
+
 #toolsweuse {
   background-color: #89e5b0; }
 
@@ -266,7 +269,10 @@ h1.logo-thin {
     color: #27ae60; }
 
 #speakwithus {
-  background-color: #27ae60; }
+  background-color: #27ae60;
+  text-align: left; }
+  #speakwithus h3 {
+    color: #fff; }
 
 #workwithus {
   background-color: #89e5b0; }
@@ -320,7 +326,18 @@ h1.logo-thin {
   .home-menu {
     text-align: left; }
     .home-menu ul {
-      float: right; } }
+      float: right; }
+  .working {
+    margin-left: 10em;
+    background-image: url(../img/working.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 80%;
+    padding-bottom: 50px; }
+  #workwithus {
+    padding-bottom: 0; }
+    #workwithus p {
+      text-align: left; } }
 
 @media (min-width: 70em) {
   .splash-head {

@@ -158,8 +158,8 @@ h1.logo-thin {
 
 .splash {
     width: 100%;
-    margin-left: auto;
     margin-right: auto;
+    max-width: 995px;
 
     .discovery, .alpha, .beta, .live {
       color: white;
@@ -254,8 +254,8 @@ h1.logo-thin {
   }
 }
 
-#speakwithus .content-subhead, label {
-    text-align: left;
+#speakwithus a {
+    color: white;
 }
 
 .content-subhead i {
@@ -278,43 +278,6 @@ h1.logo-thin {
       color: $mc-red-tint;
     }
 }
-
-// @media screen and (max-width: 641px) {
-//     .splash-container {
-//         height: 450px;
-//         margin-top: 10px;
-//     }
-//     .splash-container::after {
-//       background: none;
-//     }
-//     .content-wrapper {
-//         top: 475px
-//     }
-//     .splash {
-//         margin-top: 150px;
-//
-//         .discovery, .alpha, .beta, .live {
-//           font-size: 0.9em;
-//           line-height: 2em;
-//         }
-//
-//         .typed-cursor {
-//           font-size: 1.5em;
-//           margin-left: -0.5em;
-//         }
-//     }
-// }
-//
-// @media (min-width: 641px) and (max-width: 48em) {
-//     .splash {
-//
-//       width: 60%;
-//     }
-//
-//
-//
-//
-// }
 
 .button-link {
   background-color: darken($mc-red, 20%);
@@ -340,6 +303,12 @@ h1.logo-thin {
   }
 }
 
+.content {
+  h2 {
+    margin-bottom: 0.25em;
+  }
+}
+
 #toolsweuse {
   @extend .page-section;
   background-color: $mc-red-tint;
@@ -355,6 +324,10 @@ h1.logo-thin {
 
 #speakwithus {
   background-color: $mc-red;
+  text-align: left;
+  h3 {
+    color: #fff;
+  }
   @extend .page-section;
 }
 
@@ -432,7 +405,6 @@ h1.logo-thin {
         text-align: left;
       }
     }
-
 }
 
 @media (min-width: 60em) {
@@ -443,37 +415,25 @@ h1.logo-thin {
       float: right;
     }
   }
+
+  .working {
+    margin-left: 10em;
+    background-image: url(../img/working.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 80%;
+    padding-bottom: 50px;
+  }
+
+  #workwithus {
+    p {
+      text-align: left;
+    }
+    padding-bottom: 0;
+  }
 }
 
-// @media (min-width: 70em) {
-//
-//     .splash-container {
-//       position: relative;
-//       margin-top: 100px;
-//       height: 550px;
-//     }
-//
-//     .splash-container::after {
-//       background-size: 100%;
-//       background-position: center 50px;
-//     }
-//
-//     .splash-head {
-//       font-size: 2em;
-//     }
-//
-//     .splash-subhead {
-//       font-size: 1.5em;
-//     }
-// }
-
 @media (min-width: 70em) {
-
-    .splash-container::after {
-
-    }
-
-
 
     .splash-head {
       font-size: 2.5em;
