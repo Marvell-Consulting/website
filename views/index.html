@@ -6,6 +6,20 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K48ZCTH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+
+<!-- <script>
+    function initMap() {
+      var office = {lat: 51.50467, lng: -0.09765};
+      var map = new google.maps.Map(
+          document.getElementById('loadamap'), {zoom: 18, center: office});
+      var marker = new google.maps.Marker({position: office, map: map});
+    }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzBNW-KV_kKNe5jbBpusdQrrFPaPRhlyY&callback=initMap">
+</script> -->
 {{> partials-header}}
 
 <div class="splash-container">
@@ -178,10 +192,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     Call
                 </h3>
                 <p>
-                    <a href="tel:+443301331570">+44 (0) 33 0133 1570</a>
+                    <a href="tel:+4420 3886 0115">+44 (0)20 3886 0115</a>
                 </p>
             </div>
-            <div class="xl-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+            <div class="xl-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3" id="loadamap">
 
                 <h3 class="content-subhead">
                     <div class="type-icon"><i class="fa fa-map-marker"></i></div>
