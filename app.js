@@ -2,19 +2,16 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const winston = require('winston');
-const consolidate = require('consolidate');
 
 const jobs = require('./jobs');
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(require('churchill')(winston));
 
-app.engine('html', consolidate.mustache);
+app.engine('html', require('mustache-express')(path.join(__dirname, '/views/partials')));
 
 app.set('view engine', 'html');
 app.set('views', path.resolve(__dirname, 'views'));
-
-app.use(require('express-partial-templates')(app));
 
 app.use((req, res, next) => {
   res.locals.jobs = jobs;
@@ -23,6 +20,14 @@ app.use((req, res, next) => {
 
 app.get('/', function (req, res) {
   res.render('index');
+});
+
+app.get('/privacy', function (req, res) {
+  res.render('privacy');
+});
+
+app.get('/casestudy/:id', function (req, res) {
+  res.render(`casestudies/${req.params.id}`);
 });
 
 app.get('/jobs/:id', function (req, res, next) {
