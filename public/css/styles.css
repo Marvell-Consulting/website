@@ -216,27 +216,18 @@ h1.logo-thin {
 
 .lead-img {
   background: #27ae60;
-  padding-top: 1rem; }
-  .lead-img img {
-    display: block;
-    margin: auto; }
+  padding-top: 1rem;
+  background: rgba(39, 174, 96, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 20rem;
+  height: 20rem; }
 
 .lead-img-ukvi {
-  background: rgba(39, 174, 96, 0.5);
-  padding-top: 1rem;
-  background-image: url(/public/img/ukvi-header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50rem; }
+  background-image: url(/public/img/ukvi-header.jpg); }
 
 .lead-img-asru {
-  background: rgba(39, 174, 96, 0.5);
-  padding-top: 1rem;
-  background-image: url(/public/img/asl-bwheading.jpg);
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  height: 50rem; }
+  background-image: url(/public/img/asl-bwheading.jpg); }
 
 #casestudy .lead-in {
   font-size: 2rem;
@@ -388,7 +379,10 @@ h1.logo-thin {
     .splash p {
       width: 42rem; }
   .content-wrapper {
-    top: 68rem; } }
+    top: 68rem; }
+  .lead-img {
+    height: 30rem;
+    background-size: auto 30rem; } }
 
 @media (min-width: 55rem) {
   .splash-container {
@@ -402,11 +396,21 @@ h1.logo-thin {
     font-size: 3.5rem;
     line-height: 4.5rem; }
   #bigquote p {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .lead-img {
+    height: 50rem;
+    background-size: auto 100%; } }
 
 @media (min-width: 64rem) {
   #whowehelped img {
     max-width: 15rem; } }
+
+@media (min-width: 141rem) {
+  .lead-img {
+    height: 50rem;
+    background-size: 100% auto; }
+  .lead-img-ukvi {
+    background-size: auto 50rem; } }
 
 /*
  * -- MENU STYLES --

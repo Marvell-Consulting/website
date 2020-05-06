@@ -316,29 +316,19 @@ a.mc-button {
 .lead-img {
   background: $mc-green;
   padding-top: 1rem;
-  img {
-    display: block;
-    margin: auto;
-  }
+  background: rgba(39,174,96, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 20rem;
+  height: 20rem;
 }
 
 .lead-img-ukvi {
-  background: rgba(39,174,96, 0.5);
-  padding-top: 1rem;
   background-image: url(/public/img/ukvi-header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50rem;
 }
 
 .lead-img-asru {
-  background: rgba(39,174,96, 0.5);
-  padding-top: 1rem;
   background-image: url(/public/img/asl-bwheading.jpg);
-  background-position: center;
-  background-size: auto;
-  background-repeat: no-repeat;
-  height: 50rem;
 }
 
 #casestudy {
@@ -558,6 +548,11 @@ a.mc-button {
   .content-wrapper {
     top: 68rem;
   }
+
+  .lead-img {
+    height: 30rem;
+    background-size: auto 30rem;
+  }
 }
 @media (min-width: 55rem) {
   .splash-container {
@@ -581,6 +576,11 @@ a.mc-button {
       font-size: 2.5rem;
     }
   }
+
+  .lead-img {
+    height: 50rem;
+    background-size: auto 100%;
+  }
 }
 
 @media (min-width: 60rem) {
@@ -591,6 +591,17 @@ a.mc-button {
     img {
       max-width: 15rem;
     }
+  }
+}
+
+@media (min-width: 141rem) {
+  .lead-img {
+    height: 50rem;
+    background-size: 100% auto;
+  }
+
+  .lead-img-ukvi {
+    background-size: auto 50rem;
   }
 }
 
