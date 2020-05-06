@@ -1,8 +1,11 @@
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
     grunt.initConfig({
         sass: {
             dist: {
                 options: {
+                    implementation: sass,
                     style: 'expanded'
                 },
                 files: {
@@ -25,7 +28,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
     grunt.registerTask('default', ['sass', 'watch']);
