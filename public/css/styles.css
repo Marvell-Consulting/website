@@ -365,7 +365,7 @@ h1.logo-thin {
     width: 20rem; }
   .splash-container {
     background-image: url(../svg/team.svg);
-    background-position: 0 8rem;
+    background-position: -8rem 8rem;
     background-repeat: no-repeat;
     background-size: 128rem;
     height: 80rem; }
@@ -377,7 +377,7 @@ h1.logo-thin {
     .splash ol {
       width: 45rem; }
     .splash p {
-      width: 42rem; }
+      width: 38rem; }
   .content-wrapper {
     top: 68rem; }
   .lead-img {
@@ -386,7 +386,7 @@ h1.logo-thin {
 
 @media (min-width: 55rem) {
   .splash-container {
-    background-position: calc(50% + 14rem) 8rem; }
+    background-position: calc(50% + 10rem) 8rem; }
   .pure-g {
     overflow: hidden;
     max-width: 110rem;
