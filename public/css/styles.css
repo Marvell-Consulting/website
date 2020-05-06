@@ -184,15 +184,14 @@ h1.logo-thin {
   margin-bottom: 1rem; }
 
 #bigquote p.quote {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.2rem;
   font-size: 2.5rem;
   line-height: 3.5rem;
-  margin: 0 1rem 1rem 1rem; }
+  margin: 0 0 1rem 0; }
 
 #bigquote p {
-  margin: 0 1rem 1rem 1rem;
+  margin: 0;
   font-size: 1.5rem; }
 
 .ribbon {
@@ -400,16 +399,10 @@ h1.logo-thin {
     min-width: 76.8rem;
     margin: 0 auto; }
   #bigquote p.quote {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    letter-spacing: 0.2rem;
-    font-size: 4.5rem;
-    line-height: 5.5rem;
-    margin: 0 5rem 1rem 5rem; }
+    font-size: 3.5rem;
+    line-height: 4.5rem; }
   #bigquote p {
-    margin: 0;
-    font-size: 2.5rem;
-    margin-left: 5rem; } }
+    font-size: 2.5rem; } }
 
 @media (min-width: 64rem) {
   #whowehelped img {
