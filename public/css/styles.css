@@ -398,8 +398,7 @@ h1.logo-thin {
   #bigquote p {
     font-size: 2.5rem; }
   .lead-img {
-    height: 50rem;
-    background-size: auto 100%; } }
+    background-size: auto 50rem; } }
 
 @media (min-width: 64rem) {
   #whowehelped img {
