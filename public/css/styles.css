@@ -534,9 +534,9 @@ h1.logo-thin {
   .header .pure-u-md-2-3 {
     width: 100%; } }
 
-.cyber-essentials {
-  padding-top: 1rem; }
+.certs div:first-of-type {
+  margin-right: 2rem; }
 
-.ccss {
-  height: 8.4rem;
-  margin-right: 1rem; }
+.certs div {
+  display: inline-block;
+  margin-top: 1rem; }
