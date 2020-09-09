@@ -59,9 +59,9 @@ app.get('/privacy', function (req, res) {
   res.render('privacy');
 });
 
-// app.get('/casestudy/:id', function (req, res) {
-//   res.render(`casestudies/${req.params.id}`);
-// });
+app.get('/casestudy/:id', function (req, res) {
+  res.render(`casestudies/${req.params.id}`);
+});
 
 app.get('/jobs/:id', function (req, res, next) {
   const job = jobs.reduce((found, job) => {
