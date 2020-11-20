@@ -569,3 +569,8 @@ h1.logo-thin {
 .certs div {
   display: inline-block;
   margin-top: 1rem; }
+
+#lost .splash-head, #lost .splash-subhead {
+  width: 100%;
+  margin-top: 1em;
+  padding-bottom: 0; }
