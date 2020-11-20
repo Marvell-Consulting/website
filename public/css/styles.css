@@ -441,6 +441,9 @@ h1.logo-thin {
     height: 50rem;
     background-size: 100% auto; }
   .lead-img-ukvi {
+    background-size: auto 50rem; }
+  .lead-img-asru,
+  .lead-img-casestudies {
     background-size: auto 50rem; } }
 
 /*
