@@ -71,6 +71,10 @@ app.get('/about', function (req, res) {
   res.render('about');
 });
 
+app.get('/contact', function (req, res) {
+  res.render('contact');
+});
+
 app.get('/casestudy/:id', function (req, res) {
   res.render(`casestudies/${req.params.id}`);
 });
