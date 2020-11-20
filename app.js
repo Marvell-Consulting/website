@@ -55,6 +55,10 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/services', function (req, res) {
+  res.render('services');
+});
+
 app.get('/privacy', function (req, res) {
   res.render('privacy');
 });
