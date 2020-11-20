@@ -239,7 +239,7 @@ a.mc-button {
   }
 }
 
-#whatwedo, #casestudies, #whowehelped, #speakwithus {
+#whatwedo, #casestudies, #aboutus, #whowehelped, #speakwithus {
   .pure-g {
     padding-bottom: 2rem;
     border-bottom: 0.1rem solid $mc-grey;
@@ -334,6 +334,11 @@ a.mc-button {
 .lead-img-services {
   background-image: url(/public/img/services-header.jpg);
 }
+
+.lead-img-about {
+  background-image: url(/public/img/about-header.jpg);
+}
+
 #casestudy {
   .lead-in {
     font-size: 2rem;
@@ -517,6 +522,36 @@ a.mc-button {
 .nosidebar {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+#aboutus {
+  .bignumber {
+    border-bottom: none;
+    p {
+      margin: 0;
+    }
+  
+    div {
+      padding: 0;
+      margin-bottom: 4rem;
+    }
+  
+  
+    h3{
+      color: $mc-green;
+      font-size: 8rem;
+      line-height: 8rem;
+      margin: 0;
+      font-weight: 800;
+  
+      span {
+        font-size: 3rem;
+      }
+    }
+    .xl-box {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 /*
