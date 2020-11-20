@@ -227,7 +227,7 @@ h1.logo-thin {
   background-image: url(/public/img/ukvi-header.jpg); }
 
 .lead-img-asru {
-  background-image: url(/public/img/asl-bwheading.jpg); }
+  background-image: url(/public/img/asl-header.jpg); }
 
 #casestudy .lead-in {
   font-size: 2rem;
@@ -381,8 +381,8 @@ h1.logo-thin {
   .content-wrapper {
     top: 68rem; }
   .lead-img {
-    height: 30rem;
-    background-size: auto 30rem; } }
+    height: 50rem;
+    background-size: auto 50rem; } }
 
 @media (min-width: 55rem) {
   .splash-container {
@@ -398,7 +398,8 @@ h1.logo-thin {
   #bigquote p {
     font-size: 2.5rem; }
   .lead-img {
-    background-size: auto 50rem; } }
+    height: 50rem;
+    background-size: auto 100%; } }
 
 @media (min-width: 64rem) {
   #whowehelped img {
