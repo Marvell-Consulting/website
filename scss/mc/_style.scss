@@ -239,7 +239,7 @@ a.mc-button {
   }
 }
 
-#whatwedo, #casestudies, #whowehelped, #speakwithus {
+#whatwedo, #casestudies, #aboutus, #whowehelped, #speakwithus {
   .pure-g {
     padding-bottom: 2rem;
     border-bottom: 0.1rem solid $mc-grey;
@@ -328,17 +328,29 @@ a.mc-button {
 }
 
 .lead-img-asru {
-  background-image: url(/public/img/asl-bwheading.jpg);
+  background-image: url(/public/img/asl-header.jpg);
+}
+
+.lead-img-casestudies {
+  background-image: url(/public/img/casestudies-header.jpg);
+}
+
+.lead-img-services {
+  background-image: url(/public/img/services-header.jpg);
+}
+
+.lead-img-about {
+  background-image: url(/public/img/about-header.jpg);
 }
 
 #casestudy {
   .lead-in {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 300;
     line-height: 3.5rem;
   }
 
-  h2, h3, .lead-in {
+  h2, h3 {
     color: $mc-green;
   }
 
@@ -401,7 +413,7 @@ a.mc-button {
 
   p.quote {
     color: $mc-green;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 2.5rem;
     line-height: 3.5rem;
     border-left: 0.3rem solid $mc-green;
@@ -447,11 +459,19 @@ a.mc-button {
     // }
   }
 
-  a {
-    text-decoration: none;
-
-    p {
-      color: $mc-blue;
+  .case-study-link {
+    a {
+      text-decoration: none;
+      :hover{
+        text-decoration: underline;
+      }
+      .more-info{
+        text-decoration: underline;
+      }
+  
+      p {
+        color: $mc-blue;
+      }
     }
   }
 
@@ -516,6 +536,36 @@ a.mc-button {
   padding-right: 2rem;
 }
 
+#aboutus {
+  .bignumber {
+    border-bottom: none;
+    p {
+      margin: 0;
+    }
+  
+    div {
+      padding: 0;
+      margin-bottom: 4rem;
+    }
+  
+  
+    h3{
+      color: $mc-green;
+      font-size: 8rem;
+      line-height: 8rem;
+      margin: 0;
+      font-weight: 800;
+  
+      span {
+        font-size: 3rem;
+      }
+    }
+    .xl-box {
+      margin-bottom: 0px;
+    }
+  }
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  */
@@ -550,8 +600,8 @@ a.mc-button {
   }
 
   .lead-img {
-    height: 30rem;
-    background-size: auto 30rem;
+    height: 50rem;
+    background-size: auto 50rem;
   }
 }
 @media (min-width: 55rem) {

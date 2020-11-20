@@ -55,8 +55,24 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/services', function (req, res) {
+  res.render('services');
+});
+
 app.get('/privacy', function (req, res) {
   res.render('privacy');
+});
+
+app.get('/casestudies', function (req, res) {
+  res.render('casestudies');
+});
+
+app.get('/about', function (req, res) {
+  res.render('about');
+});
+
+app.get('/contact', function (req, res) {
+  res.render('contact');
 });
 
 app.get('/casestudy/:id', function (req, res) {
