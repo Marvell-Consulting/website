@@ -63,6 +63,9 @@ app.get('/privacy', function (req, res) {
   res.render('privacy');
 });
 
+app.get('/casestudies', function (req, res) {
+  res.render('casestudies');
+});
 
 app.get('/about', function (req, res) {
   res.render('about');

@@ -455,11 +455,16 @@ a.mc-button {
     // }
   }
 
-  a {
-    text-decoration: none;
-
-    p {
-      color: $mc-blue;
+  .case-study-link {
+    a {
+      text-decoration: none;
+      .more-info{
+        text-decoration: underline;
+      }
+  
+      p {
+        color: $mc-blue;
+      }
     }
   }
 
