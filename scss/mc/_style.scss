@@ -331,6 +331,10 @@ a.mc-button {
   background-image: url(/public/img/asl-header.jpg);
 }
 
+.lead-img-casestudies {
+  background-image: url(/public/img/casestudies-header.jpg);
+}
+
 .lead-img-services {
   background-image: url(/public/img/services-header.jpg);
 }
@@ -458,6 +462,9 @@ a.mc-button {
   .case-study-link {
     a {
       text-decoration: none;
+      :hover{
+        text-decoration: underline;
+      }
       .more-info{
         text-decoration: underline;
       }

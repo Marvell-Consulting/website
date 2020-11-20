@@ -161,7 +161,7 @@ h1.logo-thin {
 #whatwedo p {
   margin-top: 0; }
 
-#whatwedo .pure-g, #casestudies .pure-g, #whowehelped .pure-g, #speakwithus .pure-g {
+#whatwedo .pure-g, #casestudies .pure-g, #aboutus .pure-g, #whowehelped .pure-g, #speakwithus .pure-g {
   padding-bottom: 2rem;
   border-bottom: 0.1rem solid #dee2e6; }
 
@@ -229,12 +229,18 @@ h1.logo-thin {
 .lead-img-asru {
   background-image: url(/public/img/asl-header.jpg); }
 
+.lead-img-services {
+  background-image: url(/public/img/services-header.jpg); }
+
+.lead-img-about {
+  background-image: url(/public/img/about-header.jpg); }
+
 #casestudy .lead-in {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 300;
   line-height: 3.5rem; }
 
-#casestudy h2, #casestudy h3, #casestudy .lead-in {
+#casestudy h2, #casestudy h3 {
   color: #27ae60; }
 
 #casestudy h1 {
@@ -279,7 +285,7 @@ h1.logo-thin {
 
 #casestudy p.quote {
   color: #27ae60;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 2.5rem;
   line-height: 3.5rem;
   border-left: 0.3rem solid #27ae60;
@@ -316,9 +322,13 @@ h1.logo-thin {
     height: 22rem;
     width: 30rem; }
 
-#casestudies a {
+#casestudies .case-study-link a {
   text-decoration: none; }
-  #casestudies a p {
+  #casestudies .case-study-link a :hover {
+    text-decoration: underline; }
+  #casestudies .case-study-link a .more-info {
+    text-decoration: underline; }
+  #casestudies .case-study-link a p {
     color: #112a3e; }
 
 #casestudies a:hover .img div {
@@ -356,6 +366,24 @@ h1.logo-thin {
 .nosidebar {
   padding-left: 2rem;
   padding-right: 2rem; }
+
+#aboutus .bignumber {
+  border-bottom: none; }
+  #aboutus .bignumber p {
+    margin: 0; }
+  #aboutus .bignumber div {
+    padding: 0;
+    margin-bottom: 4rem; }
+  #aboutus .bignumber h3 {
+    color: #27ae60;
+    font-size: 8rem;
+    line-height: 8rem;
+    margin: 0;
+    font-weight: 800; }
+    #aboutus .bignumber h3 span {
+      font-size: 3rem; }
+  #aboutus .bignumber .xl-box {
+    margin-bottom: 0px; }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
