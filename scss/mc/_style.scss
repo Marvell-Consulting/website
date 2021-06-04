@@ -665,10 +665,10 @@ a.mc-button {
  */
 
 .home-menu {
-    box-shadow: 0 0.1rem 0.1rem $mc-grey;
+    box-shadow: 0 0.1rem 0.1rem $mc-blue;
 }
 .home-menu {
-    background: $mc-white;
+    background: $mc-blue;
 }
 .pure-menu-link {
     padding: .5rem 1rem .5rem 0.5rem !important;
@@ -687,7 +687,7 @@ a.mc-button {
 }
 
 .home-menu a {
-    color: $mc-blue;
+    color: $mc-white;
 }
 
 .right {
@@ -750,7 +750,7 @@ a.mc-button {
 }
 
 .custom-toggle .bar {
-  background: $mc-blue;
+  background: $mc-white;
   display: block;
   width: 2.8rem;
   height: .4rem;
@@ -765,7 +765,7 @@ a.mc-button {
 }
 
 .custom-toggle .bar:first-child {
-  background: $mc-blue;
+  background: $mc-white;
   -webkit-transform: translateY(-.6rem);
   -moz-transform: translateY(-.6rem);
   -ms-transform: translateY(-.6rem);
@@ -773,7 +773,7 @@ a.mc-button {
 }
 
 .custom-toggle.x .bar {
-  background: $mc-blue;
+  background: $mc-white;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
