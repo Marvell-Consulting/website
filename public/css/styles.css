@@ -450,10 +450,10 @@ h1.logo-thin {
  * -- MENU STYLES --
  */
 .home-menu {
-  box-shadow: 0 0.1rem 0.1rem #dee2e6; }
+  box-shadow: 0 0.1rem 0.1rem #112a3e; }
 
 .home-menu {
-  background: #fff; }
+  background: #112a3e; }
 
 .pure-menu-link {
   padding: .5rem 1rem .5rem 0.5rem !important; }
@@ -469,7 +469,7 @@ h1.logo-thin {
   color: #fff; }
 
 .home-menu a {
-  color: #112a3e; }
+  color: #fff; }
 
 .right {
   text-align: right; }
@@ -522,7 +522,7 @@ h1.logo-thin {
   display: none; }
 
 .custom-toggle .bar {
-  background: #112a3e;
+  background: #fff;
   display: block;
   width: 2.8rem;
   height: .4rem;
@@ -536,14 +536,14 @@ h1.logo-thin {
   transition: all 0.5s; }
 
 .custom-toggle .bar:first-child {
-  background: #112a3e;
+  background: #fff;
   -webkit-transform: translateY(-0.6rem);
   -moz-transform: translateY(-0.6rem);
   -ms-transform: translateY(-0.6rem);
   transform: translateY(-0.6rem); }
 
 .custom-toggle.x .bar {
-  background: #112a3e;
+  background: #fff;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
