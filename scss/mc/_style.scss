@@ -522,6 +522,19 @@ background-image: url(/public/img/asl-beta-header.jpg);
     line-height: 3rem;
   }
     
+  .img-hero {
+    display: block;
+    height: 40rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-size: 60rem 40rem;
+    background-repeat: no-repeat;
+
+    div {
+      position: absolute;
+      height: 40rem;
+      width: 60rem;
+    }
   }
 
   .case-study-link {
