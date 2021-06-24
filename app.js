@@ -31,7 +31,6 @@ app.get('/sitemap.xml', function(req, res) {
 
     // pipe your entries or directly write them.
     smStream.write({ url: '/'});
-    smStream.write({ url: '/casestudy/asru'});
     smStream.write({ url: '/casestudy/asru-alpha'});
     smStream.write({ url: '/casestudy/asru-beta'});
     smStream.write({ url: '/casestudy/ukvi'});
