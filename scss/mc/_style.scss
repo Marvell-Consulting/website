@@ -251,7 +251,7 @@ a.mc-button {
   }
 }
 
-#whatwedo, #casestudies, #aboutus, #whowehelped, #speakwithus {
+#whatwedo, #casestudies, #whoweare, #aboutus, #whowehelped, #speakwithus {
   .pure-g {
     padding-bottom: 2rem;
     border-bottom: 0.1rem solid $mc-grey;
@@ -446,10 +446,15 @@ a.mc-button {
   }
 }
 
-#casestudies {
   .asru {background:url(/public/img/pil-example-thumb.jpg);}
+#casestudies, #whoweare, #whatwedo {
   .ukvi {background:url(/public/img/ukvi-thumb.jpg);}
   .hof {background:url(/public/img/hof.jpg);}
+  .ben {background:url(/public/img/headshot-ben.jpg);}
+  .aspasia {background:url(/public/img/headshot-aspasia.jpg);}
+  .mike {background:url(/public/img/headshot-mike.jpg);}
+  .mark {background:url(/public/img/headshot-mark.jpg);}
+  .lenny, .nadia, .lev {background:url(/public/img/headshot-missing.jpg);}
 
   .img {
     display: block;
