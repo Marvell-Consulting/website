@@ -140,23 +140,6 @@ h1.logo-thin {
     margin-bottom: 1rem;
 }
 
-// .mc-button {
-//   display: inline-block;
-//   font-weight: 700;
-//   // text-transform: uppercase;
-//   padding: .5rem 1rem;
-//   margin-top: 1rem;
-//   border: 0.1rem solid darken($mc-green, 10%);
-//   border: transparent;
-//   background-color: $mc-green-darker;
-//   text-decoration: none;
-//   border-radius: 0.4rem;
-//   color: $mc-white;
-//   p a {
-//     color: $mc-white;
-//   }
-// }
-
 a.mc-button {
   @extend .button-link;
 }
@@ -171,7 +154,6 @@ a.mc-button {
 
 
 .yellow-highlight {
-  // padding: 0rem 0.7rem 0rem 0.8rem; 
   color: lighten(#000,20%);
   border-radius: 15% 5% / 12% 40%;
   background-image: linear-gradient(to right,transparent 50%,rgba(38,255,0,0.6) 50%);
@@ -562,11 +544,6 @@ background-image: url(/public/img/asl-beta-header.jpg);
       }
     }
   }
-
-
-  // h2 {
-  //   color: $mc-lgreen;
-  // }
 
   img {
     max-width: 28rem;
