@@ -343,6 +343,22 @@ a.mc-button {
   background-image: url(/public/img/asl-header.jpg);
 }
 
+.lead-img-asru-alpha {
+background-image: url(/public/img/asl-alpha-header.png);
+}
+
+.lead-img-asru-beta {
+background-image: url(/public/img/asl-beta-header.jpg);
+}
+
+.lead-img-nhsx-discovery {
+  background-image: url(/public/img/nhsxdiscovery-header.jpg);
+}
+
+.lead-img-nhsx-alpha {
+  background-image: url(/public/img/nhsxalpha-header.jpg);
+}
+
 .lead-img-casestudies {
   background-image: url(/public/img/casestudies-header.jpg);
 }
@@ -446,10 +462,14 @@ a.mc-button {
   }
 }
 
-  .asru {background:url(/public/img/pil-example-thumb.jpg);}
 #casestudies, #whoweare, #whatwedo {
+  .asru {background:url(/public/img/asl-homepage.JPG);}
+  .asru-beta {background:url(/public/img/asl-beta-thumb.jpg);}
   .ukvi {background:url(/public/img/ukvi-thumb.jpg);}
   .hof {background:url(/public/img/hof.jpg);}
+  .nhsx-discovery {background:url(/public/img/nhsx-eco.png);}
+  .nhsx-alpha {background:url(/public/img/nhsxalpha-thumb.png);}
+  .modern-slavery {background:url(/public/img/modern-slavery-thumb.png);}
   .ben {background:url(/public/img/headshot-ben.jpg);}
   .aspasia {background:url(/public/img/headshot-aspasia.jpg);}
   .mike {background:url(/public/img/headshot-mike.jpg);}
