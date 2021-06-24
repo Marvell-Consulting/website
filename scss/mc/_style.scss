@@ -249,6 +249,22 @@ a.mc-button {
   p {
     margin-top: 0;
   }
+
+  .marvell {background:url(/public/img/team2.jpg);}
+  .img-hero {
+    display: block;
+    height: 40rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-size: 60rem 40rem;
+    background-repeat: no-repeat;
+
+    div {
+      position: absolute;
+      height: 40rem;
+      width: 60rem;
+    }
+  }
 }
 
 #whatwedo, #casestudies, #whoweare, #aboutus, #whowehelped, #speakwithus {
@@ -337,10 +353,6 @@ a.mc-button {
 
 .lead-img-ukvi {
   background-image: url(/public/img/ukvi-header.jpg);
-}
-
-.lead-img-asru {
-  background-image: url(/public/img/asl-header.jpg);
 }
 
 .lead-img-asru-alpha {
@@ -463,10 +475,13 @@ background-image: url(/public/img/asl-beta-header.jpg);
 }
 
 #casestudies, #whoweare, #whatwedo {
-  .asru {background:url(/public/img/asl-homepage.JPG);}
+  .asru-alpha {background:url(/public/img/asl-homepage.JPG);}
   .asru-beta {background:url(/public/img/asl-beta-thumb.jpg);}
   .ukvi {background:url(/public/img/ukvi-thumb.jpg);}
-  .hof {background:url(/public/img/hof.jpg);}
+  .hof {background:url(/public/img/hof-thumb.jpg);}
+  .brp {background:url(/public/img/brp-thumb.jpg);}
+  .rotm {background:url(/public/img/rotm-thumb.jpg);}
+  .marvell {background:url(/public/img/team2.jpg);}
   .nhsx-discovery {background:url(/public/img/nhsx-eco.png);}
   .nhsx-alpha {background:url(/public/img/nhsxalpha-thumb.png);}
   .modern-slavery {background:url(/public/img/modern-slavery-thumb.png);}
@@ -613,14 +628,55 @@ background-image: url(/public/img/asl-beta-header.jpg);
     }
   }
   .splash-container {
-    background-image: url(../svg/team-d-a-b-l.svg);
-    background-position: -8rem 8rem;
-    background-repeat: no-repeat;
-    background-size: 128rem;
-    height: 80rem;
+    background-image: url(../img/office-header.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 65rem;
   }
+
+  .splash-container-casestudies {
+    background-image: url(../img/casestudies-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; 
+  }
+
+  .splash-container-who {
+    background-image: url(../img/about-header.jpg);
+    height: 50rem;
+    background-position: center; 
+    background-size: cover;
+  }
+
+  .splash-container-services {
+    background-image: url(../img/services-header.jpg);
+    height: 50rem;
+    background-position: center; 
+    background-size: cover;
+  }
+
+  .splash-container-about {
+    background-image: url(../img/office-header.jpg);
+    height: 50rem;
+    background-position: center; 
+    background-size: cover;
+  }
+
+  .splash-overlay-home{
+    background: rgba(	17, 42, 62 ,0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .splash-overlay{
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+  }
+
   .splash {
-    margin: 15rem auto auto auto;
+    margin: 23rem auto auto auto;
     h1 {
       width: 50rem;
       font-size: 3rem;
@@ -633,7 +689,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
     }
   }
   .content-wrapper {
-    top: 68rem;
+    top: 65rem;
   }
 
   .lead-img {
@@ -871,4 +927,17 @@ background-image: url(/public/img/asl-beta-header.jpg);
     margin-top: 1em;
     padding-bottom: 0;
   };
+}
+
+#block-text {
+  padding: 0 0 5px;
+  font-size: 4.5rem;
+  font-weight: lighter;
+  color: #fff;
+  background-color: $mc-green;
+  display: inline;
+  line-height: 1.4em;
+  text-align: left;
+  box-shadow: 15px 0 0 $mc-green, -15px 0 0 $mc-green;
+  -webkit-box-decoration-break: clone;
 }
