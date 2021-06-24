@@ -304,23 +304,59 @@ h1.logo-thin {
   margin-top: 2rem;
   border-top: 0.1rem solid #dee2e6; }
 
-#casestudies .asru {
-  background: url(/public/img/pil-example-thumb.jpg); }
+#casestudies .asru-alpha, #whoweare .asru-alpha, #whatwedo .asru-alpha {
+  background: url(/public/img/asl-homepage.JPG); }
 
-#casestudies .ukvi {
+#casestudies .asru-beta, #whoweare .asru-beta, #whatwedo .asru-beta {
+  background: url(/public/img/asl-beta-thumb.jpg); }
+
+#casestudies .ukvi, #whoweare .ukvi, #whatwedo .ukvi {
   background: url(/public/img/ukvi-thumb.jpg); }
 
-#casestudies .hof {
-  background: url(/public/img/hof.jpg); }
+#casestudies .hof, #whoweare .hof, #whatwedo .hof {
+  background: url(/public/img/hof-thumb.jpg); }
 
-#casestudies .img {
+#casestudies .brp, #whoweare .brp, #whatwedo .brp {
+  background: url(/public/img/brp-thumb.jpg); }
+
+#casestudies .rotm, #whoweare .rotm, #whatwedo .rotm {
+  background: url(/public/img/rotm-thumb.jpg); }
+
+#casestudies .marvell, #whoweare .marvell, #whatwedo .marvell {
+  background: url(/public/img/team2.jpg); }
+
+#casestudies .nhsx-discovery, #whoweare .nhsx-discovery, #whatwedo .nhsx-discovery {
+  background: url(/public/img/nhsx-eco.png); }
+
+#casestudies .nhsx-alpha, #whoweare .nhsx-alpha, #whatwedo .nhsx-alpha {
+  background: url(/public/img/nhsxalpha-thumb.png); }
+
+#casestudies .modern-slavery, #whoweare .modern-slavery, #whatwedo .modern-slavery {
+  background: url(/public/img/modern-slavery-thumb.png); }
+
+#casestudies .ben, #whoweare .ben, #whatwedo .ben {
+  background: url(/public/img/headshot-ben.jpg); }
+
+#casestudies .aspasia, #whoweare .aspasia, #whatwedo .aspasia {
+  background: url(/public/img/headshot-aspasia.jpg); }
+
+#casestudies .mike, #whoweare .mike, #whatwedo .mike {
+  background: url(/public/img/headshot-mike.jpg); }
+
+#casestudies .mark, #whoweare .mark, #whatwedo .mark {
+  background: url(/public/img/headshot-mark.jpg); }
+
+#casestudies .lenny, #casestudies .nadia, #casestudies .lev, #whoweare .lenny, #whoweare .nadia, #whoweare .lev, #whatwedo .lenny, #whatwedo .nadia, #whatwedo .lev {
+  background: url(/public/img/headshot-missing.jpg); }
+
+#casestudies .img, #whoweare .img, #whatwedo .img {
   display: block;
   height: 22rem;
   width: 100%;
   margin-bottom: 1rem;
   background-size: 30rem 22rem;
   background-repeat: no-repeat; }
-  #casestudies .img div {
+  #casestudies .img div, #whoweare .img div, #whatwedo .img div {
     position: absolute;
     height: 22rem;
     width: 30rem; }
