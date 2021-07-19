@@ -5,6 +5,7 @@ $mc-white: #fff;
 $mc-green-tint: lighten($mc-green, 30%);
 $mc-green-darker: darken($mc-green, 20%);
 $mc-grey: #dee2e6;
+$mc-grey-darker: #505a5f;
 
 @mixin mc-gradient {
   background: $mc-lgreen; /* For browsers that do not support gradients */
@@ -332,10 +333,15 @@ a.mc-button {
   background-position: center;
   background-size: auto 20rem;
   height: 20rem;
+  border-bottom: 1px solid $mc-grey;
 }
 
 .lead-img-ukvi {
   background-image: url(/public/img/ukvi-header.jpg);
+}
+
+.lead-img-rotm {
+  background-image: url(/public/img/rotm-header.jpg);
 }
 
 .lead-img-asru-alpha {
@@ -354,6 +360,10 @@ background-image: url(/public/img/asl-beta-header.jpg);
   background-image: url(/public/img/nhsxalpha-header.jpg);
 }
 
+.lead-img-modern-slavery {
+  background-image: url(/public/img/ms-header.jpg);
+}
+
 .lead-img-casestudies {
   background-image: url(/public/img/casestudies-header.jpg);
 }
@@ -364,6 +374,10 @@ background-image: url(/public/img/asl-beta-header.jpg);
 
 .lead-img-about {
   background-image: url(/public/img/about-header.jpg);
+}
+
+.lead-img-contact {
+  background-image: url(/public/img/contact-header.jpg);
 }
 
 #casestudy {
@@ -666,6 +680,13 @@ background-image: url(/public/img/asl-beta-header.jpg);
     background-size: cover;
   }
 
+  .splash-container-contact {
+    background-image: url(../img/contact-header.jpg);
+    height: 50rem;
+    background-position: center; 
+    background-size: cover;
+  }
+
   .splash-overlay-home{
     background: rgba(	17, 42, 62 ,0.82);
     overflow: hidden;
@@ -944,4 +965,18 @@ background-image: url(/public/img/asl-beta-header.jpg);
   text-align: left;
   box-shadow: 15px 0 0 $mc-green, -15px 0 0 $mc-green;
   -webkit-box-decoration-break: clone;
+}
+
+.citation.image {
+  display: block;
+  font-size: 1.5rem;
+  // color: $mc-grey-darker;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.img-outline {
+  border: 1px solid $mc-grey;
+}
+
 }
