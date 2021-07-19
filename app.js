@@ -110,4 +110,4 @@ app.use((err, req, res, next) => {
   res.render('500');
 });
 
-app.listen(8080, () => {winston.log('info', 'server started on 8080')});
+app.listen(process.env.PORT || 8080, () => {winston.log('info', 'server started on 8080')});
