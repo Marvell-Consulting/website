@@ -104,7 +104,7 @@ a {
 }
 
 .xl-box {
-  padding: 1rem 2.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .is-center {
@@ -505,6 +505,9 @@ background-image: url(/public/img/asl-beta-header.jpg);
 }
 
 #casestudies, #whoweare, #whatwedo {
+  .research {background:url(/public/img/research-thumb.jpg);}
+  .design {background:url(/public/img/design-thumb.jpg);}
+  .deliver {background:url(/public/img/deliver-thumb.jpg);}
   .asru-alpha {background:url(/public/img/asl-homepage.jpg);}
   .asru-beta {background:url(/public/img/asl-beta-thumb.jpg);}
   .ukvi {background:url(/public/img/ukvi-thumb.jpg);}
@@ -512,14 +515,15 @@ background-image: url(/public/img/asl-beta-header.jpg);
   .brp {background:url(/public/img/brp-thumb.jpg);}
   .rotm {background:url(/public/img/rotm-thumb.jpg);}
   .marvell {background:url(/public/img/team2.jpg);}
-  .nhsx-discovery {background:url(/public/img/nhsx-eco.png);}
+  .nhsx-discovery {background:url(/public/img/nhsx-eco.png); border: 1px solid #dee2e6;}
   .nhsx-alpha {background:url(/public/img/nhsxalpha-thumb.png);}
   .modern-slavery {background:url(/public/img/modern-slavery-thumb.jpg);}
   .ben {background:url(/public/img/headshot-ben.jpg);}
   .aspasia {background:url(/public/img/headshot-aspasia.jpg);}
   .mike {background:url(/public/img/headshot-mike.jpg);}
   .mark {background:url(/public/img/headshot-mark.jpg);}
-  .lenny, .nadia, .lev {background:url(/public/img/headshot-missing.jpg);}
+  .lenny {background:url(/public/img/headshot-lenny.jpg);}
+  .lev {background:url(/public/img/headshot-missing.jpg);}
 
   .img {
     display: block;
@@ -528,11 +532,12 @@ background-image: url(/public/img/asl-beta-header.jpg);
     margin-bottom: 1rem;
     background-size: 30rem 22rem;
     background-repeat: no-repeat;
+    background-size: cover;
 
     div {
       position: absolute;
       height: 22rem;
-      width: 30rem;
+      width: 35rem;
     }
   
   }
@@ -558,6 +563,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
     margin-bottom: 1rem;
     background-size: 60rem 40rem;
     background-repeat: no-repeat;
+    background-size: cover;
 
     div {
       position: absolute;
@@ -592,9 +598,9 @@ background-image: url(/public/img/asl-beta-header.jpg);
     }
   }
 
-  img {
-    max-width: 28rem;
-  }
+  // img {
+  //   max-width: 28rem;
+  // }
 }
 
 
