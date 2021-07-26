@@ -20,13 +20,16 @@ p, li {
   font-weight: 300; }
 
 h1 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  line-height: 1.2; }
 
 h2 {
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  line-height: 1.2; }
 
 h3 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  line-height: 1.2; }
 
 h1,
 h2,
@@ -43,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open sans', sans-serif;
   font-weight: 500; }
 
 a {
@@ -67,7 +70,7 @@ a {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1); }
 
 .xl-box {
-  padding: 1rem 2.5rem; }
+  padding: 0.5rem 1rem; }
 
 .is-center {
   text-align: center; }
@@ -154,24 +157,59 @@ h1.logo-thin {
 
 .content-subhead {
   color: #2ecc71; }
+  .content-subhead .citation {
+    padding-top: 0.5rem; }
 
-#whatwedo h3 {
-  margin-bottom: 0; }
+#whatwedo .capability {
+  margin-top: 0px; }
 
-#whatwedo p {
-  margin-top: 0; }
+#whatwedo .marvell {
+  background: url(/public/img/team2.jpg); }
 
-#whatwedo .pure-g, #casestudies .pure-g, #aboutus .pure-g, #whowehelped .pure-g, #speakwithus .pure-g {
+#whatwedo .img-hero {
+  display: block;
+  height: 40rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-size: 60rem 40rem;
+  background-repeat: no-repeat; }
+  #whatwedo .img-hero div {
+    position: absolute;
+    height: 40rem;
+    width: 60rem; }
+
+#whatwedo .pure-g, #casestudies .pure-g, #whoweare .pure-g, #aboutus .pure-g, #whowehelped .pure-g, #speakwithus .pure-g {
   padding-bottom: 2rem;
   border-bottom: 0.1rem solid #dee2e6; }
 
-#whowehelped {
-  text-align: center; }
-  #whowehelped img {
-    width: 30rem; }
-  #whowehelped h2 {
-    text-align: left;
-    margin-bottom: 2rem; }
+#whatwedo .pure-g.no-border, #casestudies .pure-g.no-border, #whoweare .pure-g.no-border, #aboutus .pure-g.no-border, #whowehelped .pure-g.no-border, #speakwithus .pure-g.no-border {
+  padding-bottom: 0px;
+  border-bottom: none; }
+
+#whowehelped img {
+  text-align: center;
+  width: 30rem; }
+
+#whowehelped h2 {
+  text-align: left;
+  margin-bottom: 2rem; }
+
+#whowehelped p {
+  text-align: left; }
+
+#whowehelped p.quote {
+  color: #27ae60;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  border-left: 0.3rem solid #27ae60;
+  padding: 0rem 0rem 0rem 2rem; }
+  #whowehelped p.quote .citation {
+    display: block;
+    font-size: 1.5rem;
+    color: #112a3e;
+    font-weight: bold;
+    margin-top: 0.5rem; }
 
 #bigquote a {
   color: #fff;
@@ -202,7 +240,8 @@ h1.logo-thin {
   font-size: 1.6rem; }
 
 .button-link, a.mc-button {
-  background-color: #145b32;
+  background-color: #229955;
+  padding: 12px 12px 10px 12px;
   text-decoration: none;
   color: #fff;
   border-style: solid;
@@ -214,6 +253,12 @@ h1.logo-thin {
 .content h2 {
   margin-bottom: 0.25rem; }
 
+.content h3 {
+  margin-bottom: 0.25rem; }
+
+.content h4 {
+  margin-bottom: 0.2rem; }
+
 .lead-img {
   background: #27ae60;
   padding-top: 1rem;
@@ -221,13 +266,29 @@ h1.logo-thin {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 20rem;
-  height: 20rem; }
+  height: 20rem;
+  border-bottom: 1px solid #dee2e6; }
 
 .lead-img-ukvi {
   background-image: url(/public/img/ukvi-header.jpg); }
 
-.lead-img-asru {
-  background-image: url(/public/img/asl-header.jpg); }
+.lead-img-rotm {
+  background-image: url(/public/img/rotm-header.jpg); }
+
+.lead-img-asru-alpha {
+  background-image: url(/public/img/asl-alpha-header.png); }
+
+.lead-img-asru-beta {
+  background-image: url(/public/img/asl-beta-header.jpg); }
+
+.lead-img-nhsx-discovery {
+  background-image: url(/public/img/nhsxdiscovery-header.jpg); }
+
+.lead-img-nhsx-alpha {
+  background-image: url(/public/img/nhsxalpha-header.jpg); }
+
+.lead-img-modern-slavery {
+  background-image: url(/public/img/ms-header.jpg); }
 
 .lead-img-casestudies {
   background-image: url(/public/img/casestudies-header.jpg); }
@@ -237,6 +298,9 @@ h1.logo-thin {
 
 .lead-img-about {
   background-image: url(/public/img/about-header.jpg); }
+
+.lead-img-contact {
+  background-image: url(/public/img/contact-header.jpg); }
 
 #casestudy .lead-in {
   font-size: 2.5rem;
@@ -297,15 +361,24 @@ h1.logo-thin {
     display: block;
     font-size: 1.5rem;
     color: #112a3e;
-    font-weight: 300;
+    font-weight: bold;
     margin-top: 0.5rem; }
 
 #casestudy .more {
   margin-top: 2rem;
   border-top: 0.1rem solid #dee2e6; }
 
+#casestudies .research, #whoweare .research, #whatwedo .research {
+  background: url(/public/img/research-thumb.jpg); }
+
+#casestudies .design, #whoweare .design, #whatwedo .design {
+  background: url(/public/img/design-thumb.jpg); }
+
+#casestudies .deliver, #whoweare .deliver, #whatwedo .deliver {
+  background: url(/public/img/deliver-thumb.jpg); }
+
 #casestudies .asru-alpha, #whoweare .asru-alpha, #whatwedo .asru-alpha {
-  background: url(/public/img/asl-homepage.JPG); }
+  background: url(/public/img/asl-homepage.jpg); }
 
 #casestudies .asru-beta, #whoweare .asru-beta, #whatwedo .asru-beta {
   background: url(/public/img/asl-beta-thumb.jpg); }
@@ -326,13 +399,14 @@ h1.logo-thin {
   background: url(/public/img/team2.jpg); }
 
 #casestudies .nhsx-discovery, #whoweare .nhsx-discovery, #whatwedo .nhsx-discovery {
-  background: url(/public/img/nhsx-eco.png); }
+  background: url(/public/img/nhsx-eco.png);
+  border: 1px solid #dee2e6; }
 
 #casestudies .nhsx-alpha, #whoweare .nhsx-alpha, #whatwedo .nhsx-alpha {
   background: url(/public/img/nhsxalpha-thumb.png); }
 
 #casestudies .modern-slavery, #whoweare .modern-slavery, #whatwedo .modern-slavery {
-  background: url(/public/img/modern-slavery-thumb.png); }
+  background: url(/public/img/modern-slavery-thumb.jpg); }
 
 #casestudies .ben, #whoweare .ben, #whatwedo .ben {
   background: url(/public/img/headshot-ben.jpg); }
@@ -346,7 +420,10 @@ h1.logo-thin {
 #casestudies .mark, #whoweare .mark, #whatwedo .mark {
   background: url(/public/img/headshot-mark.jpg); }
 
-#casestudies .lenny, #casestudies .nadia, #casestudies .lev, #whoweare .lenny, #whoweare .nadia, #whoweare .lev, #whatwedo .lenny, #whatwedo .nadia, #whatwedo .lev {
+#casestudies .lenny, #whoweare .lenny, #whatwedo .lenny {
+  background: url(/public/img/headshot-lenny.jpg); }
+
+#casestudies .lev, #whoweare .lev, #whatwedo .lev {
   background: url(/public/img/headshot-missing.jpg); }
 
 #casestudies .img, #whoweare .img, #whatwedo .img {
@@ -355,28 +432,50 @@ h1.logo-thin {
   width: 100%;
   margin-bottom: 1rem;
   background-size: 30rem 22rem;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   #casestudies .img div, #whoweare .img div, #whatwedo .img div {
     position: absolute;
     height: 22rem;
-    width: 30rem; }
+    width: 35rem; }
 
-#casestudies .case-study-link a {
+#casestudies .citation, #whoweare .citation, #whatwedo .citation {
+  display: block;
+  font-size: 1.5rem;
+  color: #112a3e;
+  font-weight: bold; }
+
+#casestudies .lead-in, #whoweare .lead-in, #whatwedo .lead-in {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem; }
+
+#casestudies .img-hero, #whoweare .img-hero, #whatwedo .img-hero {
+  display: block;
+  height: 40rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-size: 60rem 40rem;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #casestudies .img-hero div, #whoweare .img-hero div, #whatwedo .img-hero div {
+    position: absolute;
+    height: 40rem;
+    width: 60rem; }
+
+#casestudies .case-study-link a, #whoweare .case-study-link a, #whatwedo .case-study-link a {
   text-decoration: none; }
-  #casestudies .case-study-link a :hover {
+  #casestudies .case-study-link a :hover, #whoweare .case-study-link a :hover, #whatwedo .case-study-link a :hover {
     text-decoration: underline; }
-  #casestudies .case-study-link a .more-info {
+  #casestudies .case-study-link a .more-info, #whoweare .case-study-link a .more-info, #whatwedo .case-study-link a .more-info {
     text-decoration: underline; }
-  #casestudies .case-study-link a p {
+  #casestudies .case-study-link a p, #whoweare .case-study-link a p, #whatwedo .case-study-link a p {
     color: #112a3e; }
 
-#casestudies a:hover .img div {
+#casestudies a:hover .img div, #whoweare a:hover .img div, #whatwedo a:hover .img div {
   background: #27ae60;
   opacity: 0.5;
   transition: opacity 0.5s, background 0.5s; }
-
-#casestudies img {
-  max-width: 28rem; }
 
 #bigquote {
   background-color: #27ae60;
@@ -396,7 +495,8 @@ h1.logo-thin {
     margin-top: 3rem;
     line-height: 5rem; }
   .fullwidth h2 {
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    margin-top: 1.2; }
   .fullwidth h3 {
     margin-bottom: 0; }
   .fullwidth p {
@@ -431,13 +531,46 @@ h1.logo-thin {
   #whowehelped img {
     width: 20rem; }
   .splash-container {
-    background-image: url(../svg/team-d-a-b-l.svg);
-    background-position: -8rem 8rem;
-    background-repeat: no-repeat;
-    background-size: 128rem;
-    height: 80rem; }
+    background-image: url(../img/office-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 65rem; }
+  .splash-container-casestudies {
+    background-image: url(../img/casestudies-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
+  .splash-container-who {
+    background-image: url(../img/about-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
+  .splash-container-services {
+    background-image: url(../img/services-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
+  .splash-container-about {
+    background-image: url(../img/office-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
+  .splash-container-contact {
+    background-image: url(../img/contact-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
+  .splash-overlay-home {
+    background: rgba(17, 42, 62, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2; }
+  .splash-overlay {
+    overflow: hidden;
+    height: 100%;
+    z-index: 2; }
   .splash {
-    margin: 15rem auto auto auto; }
+    margin: 23rem auto auto auto; }
     .splash h1 {
       width: 50rem;
       font-size: 3rem; }
@@ -446,7 +579,7 @@ h1.logo-thin {
     .splash p {
       width: 38rem; }
   .content-wrapper {
-    top: 68rem; }
+    top: 65rem; }
   .lead-img {
     height: 50rem;
     background-size: auto 50rem; } }
@@ -616,3 +749,35 @@ h1.logo-thin {
   width: 100%;
   margin-top: 1em;
   padding-bottom: 0; }
+
+#block-text {
+  padding: 0 0 5px;
+  font-size: 4.5rem;
+  font-weight: lighter;
+  color: #fff;
+  background-color: #27ae60;
+  display: inline;
+  line-height: 1.4em;
+  text-align: left;
+  box-shadow: 15px 0 0 #27ae60, -15px 0 0 #27ae60;
+  -webkit-box-decoration-break: clone; }
+
+.citation.image {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 2rem; }
+
+.img-outline {
+  border: 1px solid #dee2e6; }
+
+dl.contact-us {
+  font-weight: 300; }
+  dl.contact-us dt {
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+    padding-bottom: 0.5em; }
+  dl.contact-us dd {
+    display: inline-block;
+    width: 75%; }
