@@ -377,6 +377,10 @@ a.mc-button {
   background-image: url(/public/img/rotm-header.jpg);
 }
 
+.lead-img-hof {
+  background-image: url(/public/img/hof-header.jpg);
+}
+
 .lead-img-asru-alpha {
 background-image: url(/public/img/asl-alpha-header.png);
 }
@@ -413,7 +417,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
   background-image: url(/public/img/contact-header.jpg);
 }
 
-#casestudy {
+#casestudy, #services {
   .lead-in {
     font-size: 2.5rem;
     font-weight: 300;
@@ -463,6 +467,15 @@ background-image: url(/public/img/asl-beta-header.jpg);
         font-size: 3rem;
       }
     }
+  }
+
+  .services-header h2 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .services-sidebar h3 {
+    margin-top: 0px;
   }
 
   .sidebar, .main, .title {
