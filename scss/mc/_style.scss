@@ -521,6 +521,10 @@ background-image: url(/public/img/asl-beta-header.jpg);
   }
 }
 
+.logos-container {
+  text-align: center;
+}
+
 #casestudies, #whoweare, #whatwedo {
   .research {background:url(/public/img/research-thumb.jpg);}
   .design {background:url(/public/img/design-thumb.jpg);}
@@ -559,7 +563,6 @@ background-image: url(/public/img/asl-beta-header.jpg);
     }
   
   }
-    
     
   .citation {
     display: block;
@@ -663,7 +666,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
   padding-right: 2rem;
 }
 
-#aboutus {
+#aboutus, #whowehelped {
   .bignumber {
     border-bottom: none;
     p {
@@ -681,7 +684,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
       font-size: 8rem;
       line-height: 8rem;
       margin: 0;
-      font-weight: 800;
+      font-weight: lighter;
   
       span {
         font-size: 3rem;
@@ -689,6 +692,9 @@ background-image: url(/public/img/asl-beta-header.jpg);
     }
     .xl-box {
       margin-bottom: 0px;
+    }
+    .stat-symbol {
+      font-size: 6rem;
     }
   }
 }
