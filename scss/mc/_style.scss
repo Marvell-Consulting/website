@@ -401,6 +401,10 @@ background-image: url(/public/img/asl-beta-header.jpg);
   background-image: url(/public/img/ms-header.jpg);
 }
 
+.lead-img-ho-live {
+  background-image: url(/public/img/live-header.png);
+}
+
 .lead-img-casestudies {
   background-image: url(/public/img/casestudies-header.jpg);
 }
@@ -540,6 +544,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
   .nhsx-discovery {background:url(/public/img/nhsx-eco.png); border: 1px solid #dee2e6;}
   .nhsx-alpha {background:url(/public/img/nhsxalpha-thumb.png);}
   .modern-slavery {background:url(/public/img/ms-thumb.png);}
+  .ho-live {background:url(/public/img/ho-live-thumb.png);}
   .ben {background:url(/public/img/headshot-ben.jpg);}
   .aspasia {background:url(/public/img/headshot-aspasia.jpg);}
   .mike {background:url(/public/img/headshot-mike.jpg);}
@@ -674,7 +679,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
     }
   
     div {
-      padding: 0;
+      padding: 0 0 0 1em;
       margin-bottom: 4rem;
     }
   
