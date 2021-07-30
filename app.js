@@ -36,6 +36,7 @@ app.get('/sitemap.xml', function(req, res) {
     smStream.write({ url: '/casestudy/ukvi'});
     smStream.write({ url: '/casestudy/rotm'});
     smStream.write({ url: '/casestudy/hof'});
+    smStream.write({ url: '/casestudy/ho-live'});
     smStream.write({ url: '/casestudy/nhsx-discovery'});
     smStream.write({ url: '/casestudy/nhsx-alpha'});
     smStream.write({ url: '/casestudy/modern-slavery'});
