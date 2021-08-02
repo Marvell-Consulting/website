@@ -1,6 +1,6 @@
 $mc-blue: #112a3e;
 $mc-lgreen: #2ecc71;
-$mc-green: #27ae60;
+$mc-green: #25A75C;
 $mc-white: #fff;
 $mc-green-tint: lighten($mc-green, 30%);
 $mc-green-darker: darken($mc-green, 20%);
@@ -216,24 +216,21 @@ a.mc-button {
 }
 
 .content-head-ribbon {
-    color: $mc-lgreen;
+    color: $mc-green;
 }
 
 .content-subhead{
-    color: $mc-lgreen;
+    color: $mc-green;
     .citation {
       padding-top: 0.5rem;
     }
 }
 
 #whatwedo {
-  // h3{
-  //   margin-bottom: 0;
-  // }
-  // p {
-  //   margin-top: 0;
-  // }
   .capability {
+    margin-top: 0px;
+  }
+  h3 {
     margin-top: 0px;
   }
 
@@ -254,7 +251,7 @@ a.mc-button {
   }
 }
 
-#whatwedo, #casestudies, #whoweare, #aboutus, #whowehelped, #speakwithus {
+#whatwedo, #casestudies, #whoweare, #aboutus, #whowehelped, #speakwithus, #services, #casestudy {
   .pure-g {
     padding-bottom: 2rem;
     border-bottom: 0.1rem solid $mc-grey;
@@ -421,7 +418,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
   background-image: url(/public/img/contact-header.jpg);
 }
 
-#casestudy, #services {
+#casestudy, #services, #whoweare {
   .lead-in {
     font-size: 2.5rem;
     font-weight: 300;
@@ -575,12 +572,6 @@ background-image: url(/public/img/asl-beta-header.jpg);
     color: $mc-blue;
     font-weight: bold;
   }
-
-  .lead-in {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 3rem;
-  }
     
   .img-hero {
     display: block;
@@ -676,6 +667,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
     border-bottom: none;
     p {
       margin: 0;
+      line-height: 1.3;
     }
   
     div {
@@ -1065,4 +1057,11 @@ dl.contact-us {
 
 .img-border {
   border: 0.1rem solid $mc-grey;
+}
+
+.right-col-intro {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+    padding-top: 1.2rem
 }
