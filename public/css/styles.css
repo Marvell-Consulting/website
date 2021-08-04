@@ -50,7 +50,7 @@ h6 {
   font-weight: 500; }
 
 a {
-  color: #27ae60; }
+  color: #25A75C; }
 
 .anchor {
   position: relative; }
@@ -153,14 +153,17 @@ h1.logo-thin {
   background: white; }
 
 .content-head-ribbon {
-  color: #2ecc71; }
+  color: #25A75C; }
 
 .content-subhead {
-  color: #2ecc71; }
+  color: #25A75C; }
   .content-subhead .citation {
     padding-top: 0.5rem; }
 
 #whatwedo .capability {
+  margin-top: 0px; }
+
+#whatwedo h3 {
   margin-top: 0px; }
 
 #whatwedo .marvell {
@@ -178,11 +181,11 @@ h1.logo-thin {
     height: 40rem;
     width: 60rem; }
 
-#whatwedo .pure-g, #casestudies .pure-g, #whoweare .pure-g, #aboutus .pure-g, #whowehelped .pure-g, #speakwithus .pure-g {
+#whatwedo .pure-g, #casestudies .pure-g, #whoweare .pure-g, #aboutus .pure-g, #whowehelped .pure-g, #speakwithus .pure-g, #services .pure-g, #casestudy .pure-g {
   padding-bottom: 2rem;
   border-bottom: 0.1rem solid #dee2e6; }
 
-#whatwedo .pure-g.no-border, #casestudies .pure-g.no-border, #whoweare .pure-g.no-border, #aboutus .pure-g.no-border, #whowehelped .pure-g.no-border, #speakwithus .pure-g.no-border {
+#whatwedo .pure-g.no-border, #casestudies .pure-g.no-border, #whoweare .pure-g.no-border, #aboutus .pure-g.no-border, #whowehelped .pure-g.no-border, #speakwithus .pure-g.no-border, #services .pure-g.no-border, #casestudy .pure-g.no-border {
   padding-bottom: 0px;
   border-bottom: none; }
 
@@ -198,11 +201,11 @@ h1.logo-thin {
   text-align: left; }
 
 #whowehelped p.quote {
-  color: #27ae60;
+  color: #25A75C;
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 3.5rem;
-  border-left: 0.3rem solid #27ae60;
+  border-left: 0.3rem solid #25A75C;
   padding: 0rem 0rem 0rem 2rem; }
   #whowehelped p.quote .citation {
     display: block;
@@ -240,15 +243,15 @@ h1.logo-thin {
   font-size: 1.6rem; }
 
 .button-link, a.mc-button {
-  background-color: #229955;
+  background-color: #209251;
   padding: 12px 12px 10px 12px;
   text-decoration: none;
   color: #fff;
   border-style: solid;
   border-width: 0 0 0.5rem 0;
-  border-bottom: solid #1e8449; }
+  border-bottom: solid #1c7d45; }
   .button-link:hover, a.mc-button:hover {
-    background-color: #104627; }
+    background-color: #0e3f23; }
 
 .content h2 {
   margin-bottom: 0.25rem; }
@@ -260,7 +263,7 @@ h1.logo-thin {
   margin-bottom: 0.2rem; }
 
 .lead-img {
-  background: #27ae60;
+  background: #25A75C;
   padding-top: 1rem;
   background: rgba(39, 174, 96, 0.5);
   background-repeat: no-repeat;
@@ -274,6 +277,9 @@ h1.logo-thin {
 
 .lead-img-rotm {
   background-image: url(/public/img/rotm-header.jpg); }
+
+.lead-img-hof {
+  background-image: url(/public/img/hof-header.jpg); }
 
 .lead-img-asru-alpha {
   background-image: url(/public/img/asl-alpha-header.png); }
@@ -290,6 +296,9 @@ h1.logo-thin {
 .lead-img-modern-slavery {
   background-image: url(/public/img/ms-header.jpg); }
 
+.lead-img-ho-live {
+  background-image: url(/public/img/live-header.png); }
+
 .lead-img-casestudies {
   background-image: url(/public/img/casestudies-header.jpg); }
 
@@ -302,71 +311,84 @@ h1.logo-thin {
 .lead-img-contact {
   background-image: url(/public/img/contact-header.jpg); }
 
-#casestudy .lead-in {
+#casestudy .lead-in, #services .lead-in, #whoweare .lead-in {
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 3.5rem; }
 
-#casestudy h2, #casestudy h3 {
-  color: #27ae60; }
+#casestudy h2, #casestudy h3, #services h2, #services h3, #whoweare h2, #whoweare h3 {
+  color: #25A75C; }
 
-#casestudy h1 {
+#casestudy h1, #services h1, #whoweare h1 {
   margin-bottom: 0.5rem; }
 
-#casestudy h2 {
+#casestudy h2, #services h2, #whoweare h2 {
   font-size: 2.5rem; }
 
-#casestudy h3 {
+#casestudy h3, #services h3, #whoweare h3 {
   font-size: 2rem; }
 
-#casestudy .client {
+#casestudy .client, #services .client, #whoweare .client {
   margin-top: 0; }
 
-#casestudy .bignumber p {
-  color: #27ae60;
+#casestudy .bignumber p, #services .bignumber p, #whoweare .bignumber p {
+  color: #25A75C;
   margin: 0;
   font-weight: 600; }
 
-#casestudy .bignumber div {
+#casestudy .bignumber div, #services .bignumber div, #whoweare .bignumber div {
   padding: 0;
   margin-bottom: 4rem; }
 
-#casestudy .bignumber h3 {
+#casestudy .bignumber h3, #services .bignumber h3, #whoweare .bignumber h3 {
   font-size: 8rem;
   line-height: 8rem;
   margin: 0;
   font-weight: 800; }
-  #casestudy .bignumber h3 span {
+  #casestudy .bignumber h3 span, #services .bignumber h3 span, #whoweare .bignumber h3 span {
     font-size: 3rem; }
 
-#casestudy .sidebar, #casestudy .main, #casestudy .title {
+#casestudy .services-header h2, #services .services-header h2, #whoweare .services-header h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem; }
+
+#casestudy .services-sidebar h3, #services .services-sidebar h3, #whoweare .services-sidebar h3 {
+  margin-top: 0px; }
+
+#casestudy .sidebar, #casestudy .main, #casestudy .title, #services .sidebar, #services .main, #services .title, #whoweare .sidebar, #whoweare .main, #whoweare .title {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-#casestudy .sidebar {
+#casestudy .sidebar, #services .sidebar, #whoweare .sidebar {
   margin-bottom: 2rem; }
-  #casestudy .sidebar p {
+  #casestudy .sidebar p, #services .sidebar p, #whoweare .sidebar p {
     margin: 0; }
-  #casestudy .sidebar h3:first-child {
+  #casestudy .sidebar h3:first-child, #services .sidebar h3:first-child, #whoweare .sidebar h3:first-child {
     margin-top: 0; }
 
-#casestudy p.quote {
-  color: #27ae60;
+#casestudy .intro-para, #services .intro-para, #whoweare .intro-para {
+  margin-top: 2.5rem; }
+
+#casestudy p.quote, #services p.quote, #whoweare p.quote {
+  color: #25A75C;
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 3.5rem;
-  border-left: 0.3rem solid #27ae60;
+  border-left: 0.3rem solid #25A75C;
   padding: 0rem 0rem 0rem 2rem; }
-  #casestudy p.quote .citation {
+  #casestudy p.quote .citation, #services p.quote .citation, #whoweare p.quote .citation {
     display: block;
     font-size: 1.5rem;
     color: #112a3e;
     font-weight: bold;
     margin-top: 0.5rem; }
 
-#casestudy .more {
+#casestudy .more, #services .more, #whoweare .more {
   margin-top: 2rem;
   border-top: 0.1rem solid #dee2e6; }
+
+.logos-container {
+  text-align: center; }
 
 #casestudies .research, #whoweare .research, #whatwedo .research {
   background: url(/public/img/research-thumb.jpg); }
@@ -378,7 +400,7 @@ h1.logo-thin {
   background: url(/public/img/deliver-thumb.jpg); }
 
 #casestudies .asru-alpha, #whoweare .asru-alpha, #whatwedo .asru-alpha {
-  background: url(/public/img/asl-homepage.jpg); }
+  background: url(/public/img/asl-alpha-thumb.jpg); }
 
 #casestudies .asru-beta, #whoweare .asru-beta, #whatwedo .asru-beta {
   background: url(/public/img/asl-beta-thumb.jpg); }
@@ -395,6 +417,9 @@ h1.logo-thin {
 #casestudies .rotm, #whoweare .rotm, #whatwedo .rotm {
   background: url(/public/img/rotm-thumb.jpg); }
 
+#casestudies .wiley, #whoweare .wiley, #whatwedo .wiley {
+  background: url(/public/img/wiley-thumb.png); }
+
 #casestudies .marvell, #whoweare .marvell, #whatwedo .marvell {
   background: url(/public/img/team2.jpg); }
 
@@ -406,7 +431,10 @@ h1.logo-thin {
   background: url(/public/img/nhsxalpha-thumb.png); }
 
 #casestudies .modern-slavery, #whoweare .modern-slavery, #whatwedo .modern-slavery {
-  background: url(/public/img/modern-slavery-thumb.jpg); }
+  background: url(/public/img/ms-thumb.png); }
+
+#casestudies .ho-live, #whoweare .ho-live, #whatwedo .ho-live {
+  background: url(/public/img/ho-live-thumb.png); }
 
 #casestudies .ben, #whoweare .ben, #whatwedo .ben {
   background: url(/public/img/headshot-ben.jpg); }
@@ -445,11 +473,6 @@ h1.logo-thin {
   color: #112a3e;
   font-weight: bold; }
 
-#casestudies .lead-in, #whoweare .lead-in, #whatwedo .lead-in {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 3rem; }
-
 #casestudies .img-hero, #whoweare .img-hero, #whatwedo .img-hero {
   display: block;
   height: 40rem;
@@ -473,18 +496,18 @@ h1.logo-thin {
     color: #112a3e; }
 
 #casestudies a:hover .img div, #whoweare a:hover .img div, #whatwedo a:hover .img div {
-  background: #27ae60;
+  background: #25A75C;
   opacity: 0.5;
   transition: opacity 0.5s, background 0.5s; }
 
 #bigquote {
-  background-color: #27ae60;
+  background-color: #25A75C;
   text-align: left; }
   #bigquote h3 {
     color: #fff; }
 
 #careers {
-  background-color: #89e5b0; }
+  background-color: #82e3ab; }
   #careers p {
     color: #112a3e; }
 
@@ -506,23 +529,26 @@ h1.logo-thin {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-#aboutus .bignumber {
+#aboutus .bignumber, #whowehelped .bignumber {
   border-bottom: none; }
-  #aboutus .bignumber p {
-    margin: 0; }
-  #aboutus .bignumber div {
-    padding: 0;
+  #aboutus .bignumber p, #whowehelped .bignumber p {
+    margin: 0;
+    line-height: 1.3; }
+  #aboutus .bignumber div, #whowehelped .bignumber div {
+    padding: 0 0 0 1em;
     margin-bottom: 4rem; }
-  #aboutus .bignumber h3 {
-    color: #27ae60;
+  #aboutus .bignumber h3, #whowehelped .bignumber h3 {
+    color: #25A75C;
     font-size: 8rem;
     line-height: 8rem;
     margin: 0;
-    font-weight: 800; }
-    #aboutus .bignumber h3 span {
+    font-weight: lighter; }
+    #aboutus .bignumber h3 span, #whowehelped .bignumber h3 span {
       font-size: 3rem; }
-  #aboutus .bignumber .xl-box {
+  #aboutus .bignumber .xl-box, #whowehelped .bignumber .xl-box {
     margin-bottom: 0px; }
+  #aboutus .bignumber .stat-symbol, #whowehelped .bignumber .stat-symbol {
+    font-size: 6rem; }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -536,7 +562,7 @@ h1.logo-thin {
     background-size: cover;
     height: 65rem; }
   .splash-container-casestudies {
-    background-image: url(../img/casestudies-header.jpg);
+    background-image: url(../img/contact-header.jpg);
     height: 50rem;
     background-position: center;
     background-size: cover; }
@@ -556,7 +582,6 @@ h1.logo-thin {
     background-position: center;
     background-size: cover; }
   .splash-container-contact {
-    background-image: url(../img/contact-header.jpg);
     height: 50rem;
     background-position: center;
     background-size: cover; }
@@ -656,7 +681,7 @@ h1.logo-thin {
 .home-menu li a:focus {
   background: none;
   border: none;
-  color: #27ae60; }
+  color: #25A75C; }
 
 /* Custom menu */
 .mc-logo img {
@@ -755,11 +780,11 @@ h1.logo-thin {
   font-size: 4.5rem;
   font-weight: lighter;
   color: #fff;
-  background-color: #27ae60;
+  background-color: #25A75C;
   display: inline;
   line-height: 1.4em;
   text-align: left;
-  box-shadow: 15px 0 0 #27ae60, -15px 0 0 #27ae60;
+  box-shadow: 15px 0 0 #25A75C, -15px 0 0 #25A75C;
   -webkit-box-decoration-break: clone; }
 
 .citation.image {
@@ -781,3 +806,12 @@ dl.contact-us {
   dl.contact-us dd {
     display: inline-block;
     width: 75%; }
+
+.img-border {
+  border: 0.1rem solid #dee2e6; }
+
+.right-col-intro {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  padding-top: 1.2rem; }
