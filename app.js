@@ -31,8 +31,15 @@ app.get('/sitemap.xml', function(req, res) {
 
     // pipe your entries or directly write them.
     smStream.write({ url: '/'});
-    smStream.write({ url: '/casestudy/asru'});
+    smStream.write({ url: '/casestudy/asru-alpha'});
+    smStream.write({ url: '/casestudy/asru-beta'});
     smStream.write({ url: '/casestudy/ukvi'});
+    smStream.write({ url: '/casestudy/rotm'});
+    smStream.write({ url: '/casestudy/hof'});
+    smStream.write({ url: '/casestudy/ho-live'});
+    smStream.write({ url: '/casestudy/nhsx-discovery'});
+    smStream.write({ url: '/casestudy/nhsx-alpha'});
+    smStream.write({ url: '/casestudy/modern-slavery'});
     smStream.write({ url: '/privacy'});
     smStream.end()
 
@@ -71,6 +78,10 @@ app.get('/about', function (req, res) {
   res.render('about');
 });
 
+app.get('/who', function (req, res) {
+  res.render('who');
+});
+
 app.get('/contact', function (req, res) {
   res.render('contact');
 });
@@ -101,4 +112,4 @@ app.use((err, req, res, next) => {
   res.render('500');
 });
 
-app.listen(8080, () => {winston.log('info', 'server started on 8080')});
+app.listen(process.env.PORT || 8080, () => {winston.log('info', 'server started on 8080')});
