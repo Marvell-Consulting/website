@@ -1,6 +1,10 @@
 module.exports = [
+  // {
+  //   id: 'user-researcher',
+  //   title: 'Senior User Researcher - Contract'
+  // },
   {
-    id: 'user-researcher',
-    title: 'User Researcher - Permanent'
+    id: 'content-designer',
+    title: 'Content Editor - Contract (outside IR35)'
   }
 ];

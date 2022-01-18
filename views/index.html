@@ -221,6 +221,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
+    <div>
+        <div class="anchor"><div id="workwithus"></div></div>
+        <div class="pure-g">
+            <div class="xl-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+                <h2 class="content-head content-head-ribbon">Work with us.</h2>
+            </div>
+            <div class="xl-box pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
+                {{#jobs.length}}
+                    <p>We are currently hiring for the following positions. <a href="mailto:talent@marvell.consulting">Get in touch</a> if you are interested.</p>
+                    <p>
+                    {{#jobs}}
+                        <a href="/jobs/{{id}}">{{title}}</a>
+                    {{/jobs}}
+                    </p>
+                {{/jobs.length}}
+                {{^jobs.length}}
+                    <p>We don't have any open positions at the moment, but we're always keen to meet talented people who share our goals.</p>
+                    <p><a href="mailto:hello@marvell-consulting.com">get in touch</a></p>
+                {{/jobs.length}}
+            </div>
+        </div>
+    </div>
 
     {{> contact}}
 
