@@ -394,6 +394,10 @@ background-image: url(/public/img/asl-beta-header.jpg);
   background-image: url(/public/img/nhsxalpha-header.jpg);
 }
 
+.lead-img-nhsx-beta {
+  background-image: url(/public/img/nhsxbeta-header.png);
+}
+
 .lead-img-modern-slavery {
   background-image: url(/public/img/ms-header.jpg);
 }
@@ -540,6 +544,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
   .marvell {background:url(/public/img/team2.jpg);}
   .nhsx-discovery {background:url(/public/img/nhsx-eco.png); border: 1px solid #dee2e6;}
   .nhsx-alpha {background:url(/public/img/nhsxalpha-thumb.png);}
+  .nhsx-beta {background:url(/public/img/nhsxbeta-thumb.png);}
   .modern-slavery {background:url(/public/img/ms-thumb.png);}
   .ho-live {background:url(/public/img/ho-live-thumb.png);}
   .ben {background:url(/public/img/headshot-ben.jpg);}

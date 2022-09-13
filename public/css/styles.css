@@ -293,6 +293,9 @@ h1.logo-thin {
 .lead-img-nhsx-alpha {
   background-image: url(/public/img/nhsxalpha-header.jpg); }
 
+.lead-img-nhsx-beta {
+  background-image: url(/public/img/nhsxbeta-header.png); }
+
 .lead-img-modern-slavery {
   background-image: url(/public/img/ms-header.jpg); }
 
@@ -429,6 +432,9 @@ h1.logo-thin {
 
 #casestudies .nhsx-alpha, #whoweare .nhsx-alpha, #whatwedo .nhsx-alpha {
   background: url(/public/img/nhsxalpha-thumb.png); }
+
+#casestudies .nhsx-beta, #whoweare .nhsx-beta, #whatwedo .nhsx-beta {
+  background: url(/public/img/nhsxbeta-thumb.png); }
 
 #casestudies .modern-slavery, #whoweare .modern-slavery, #whatwedo .modern-slavery {
   background: url(/public/img/ms-thumb.png); }
