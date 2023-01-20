@@ -322,12 +322,14 @@ a.mc-button {
 }
 
 .ribbon {
-    background: $mc-blue;
+    background-color: $mc-blue;
     color: $mc-white;
 }
 
 .footer {
     font-size: 1.6rem;
+    background-color: $mc-blue;
+    color: $mc-white;
 }
 
 .button-link {

@@ -236,11 +236,13 @@ h1.logo-thin {
   font-size: 1.5rem; }
 
 .ribbon {
-  background: #112a3e;
+  background-color: #112a3e;
   color: #fff; }
 
 .footer {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  background-color: #112a3e;
+  color: #fff; }
 
 .button-link, a.mc-button {
   background-color: #209251;
