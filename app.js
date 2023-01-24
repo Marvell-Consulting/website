@@ -83,6 +83,10 @@ app.get('/who', function (req, res) {
   res.render('who');
 });
 
+app.get('/frameworks', function (req, res) {
+  res.render('frameworks');
+});
+
 app.get('/contact', function (req, res) {
   res.render('contact');
 });

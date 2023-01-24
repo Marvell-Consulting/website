@@ -421,6 +421,10 @@ background-image: url(/public/img/asl-beta-header.jpg);
   background-image: url(/public/img/about-header.jpg);
 }
 
+.lead-img-frameworks {
+  background-image: url(/public/img/frameworks-header.jpg);
+}
+
 .lead-img-contact {
   background-image: url(/public/img/contact-header.jpg);
 }
@@ -744,6 +748,13 @@ background-image: url(/public/img/asl-beta-header.jpg);
 
   .splash-container-about {
     background-image: url(../img/office-header.jpg);
+    height: 50rem;
+    background-position: center; 
+    background-size: cover;
+  }
+
+  .splash-container-frameworks {
+    background-image: url(../img/frameworks-header.jpg);
     height: 50rem;
     background-position: center; 
     background-size: cover;
