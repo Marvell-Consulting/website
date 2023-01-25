@@ -8,7 +8,8 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #112a3e; }
 
 body {
   line-height: 3rem;
@@ -313,6 +314,9 @@ h1.logo-thin {
 .lead-img-about {
   background-image: url(/public/img/about-header.jpg); }
 
+.lead-img-frameworks {
+  background-image: url(/public/img/frameworks-header.jpg); }
+
 .lead-img-contact {
   background-image: url(/public/img/contact-header.jpg); }
 
@@ -586,6 +590,11 @@ h1.logo-thin {
     background-size: cover; }
   .splash-container-about {
     background-image: url(../img/office-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
+  .splash-container-frameworks {
+    background-image: url(../img/frameworks-header.jpg);
     height: 50rem;
     background-position: center;
     background-size: cover; }
