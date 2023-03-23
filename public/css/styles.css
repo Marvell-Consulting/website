@@ -1,13 +1,13 @@
 /* Marvell Consulting Ltd */
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-variant-ligatures: no-common-ligatures; }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 62.5%;
   background-color: #112a3e; }
 
@@ -15,7 +15,7 @@ body {
   line-height: 3rem;
   color: #112a3e;
   font-size: 1.8rem;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Hind', sans-serif; }
 
 p, li {
   font-weight: 300; }
@@ -47,8 +47,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open sans', sans-serif;
-  font-weight: 500; }
+  font-family: 'Hind', sans-serif;
+  font-weight: 300; }
 
 a {
   color: #25A75C; }
@@ -154,10 +154,10 @@ h1.logo-thin {
   background: white; }
 
 .content-head-ribbon {
-  color: #25A75C; }
+  color: #112a3e; }
 
 .content-subhead {
-  color: #25A75C; }
+  color: #112a3e; }
   .content-subhead .citation {
     padding-top: 0.5rem; }
 
@@ -166,9 +166,6 @@ h1.logo-thin {
 
 #whatwedo h3 {
   margin-top: 0px; }
-
-#whatwedo .marvell {
-  background: url(/public/img/team2.jpg); }
 
 #whatwedo .img-hero {
   display: block;
@@ -189,6 +186,9 @@ h1.logo-thin {
 #whatwedo .pure-g.no-border, #casestudies .pure-g.no-border, #whoweare .pure-g.no-border, #aboutus .pure-g.no-border, #whowehelped .pure-g.no-border, #speakwithus .pure-g.no-border, #services .pure-g.no-border, #casestudy .pure-g.no-border {
   padding-bottom: 0px;
   border-bottom: none; }
+
+#speakwithus h2 {
+  color: #fff; }
 
 #whowehelped img {
   text-align: center;
@@ -322,11 +322,8 @@ h1.logo-thin {
 
 #casestudy .lead-in, #services .lead-in, #whoweare .lead-in {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 3.5rem; }
-
-#casestudy h2, #casestudy h3, #services h2, #services h3, #whoweare h2, #whoweare h3 {
-  color: #25A75C; }
 
 #casestudy h1, #services h1, #whoweare h1 {
   margin-bottom: 0.5rem; }
@@ -389,7 +386,6 @@ h1.logo-thin {
     display: block;
     font-size: 1.5rem;
     color: #112a3e;
-    font-weight: bold;
     margin-top: 0.5rem; }
 
 #casestudy .more, #services .more, #whoweare .more {
@@ -430,7 +426,7 @@ h1.logo-thin {
   background: url(/public/img/wiley-thumb.png); }
 
 #casestudies .marvell, #whoweare .marvell, #whatwedo .marvell {
-  background: url(/public/img/team2.jpg); }
+  background: url(/public/img/team.png); }
 
 #casestudies .nhsx-discovery, #whoweare .nhsx-discovery, #whatwedo .nhsx-discovery {
   background: url(/public/img/nhsx-eco.png);
@@ -466,6 +462,15 @@ h1.logo-thin {
 #casestudies .lev, #whoweare .lev, #whatwedo .lev {
   background: url(/public/img/headshot-missing.jpg); }
 
+#casestudies .understand-your-users, #whoweare .understand-your-users, #whatwedo .understand-your-users {
+  background: url(/public/img/research-thumb.jpg); }
+
+#casestudies .building-your-digital-service, #whoweare .building-your-digital-service, #whatwedo .building-your-digital-service {
+  background: url(/public/img/build.jpg); }
+
+#casestudies .develop-your-digital-skills, #whoweare .develop-your-digital-skills, #whatwedo .develop-your-digital-skills {
+  background: url(/public/img/develop.jpg); }
+
 #casestudies .img, #whoweare .img, #whatwedo .img {
   display: block;
   height: 22rem;
@@ -482,8 +487,7 @@ h1.logo-thin {
 #casestudies .citation, #whoweare .citation, #whatwedo .citation {
   display: block;
   font-size: 1.5rem;
-  color: #112a3e;
-  font-weight: bold; }
+  color: #112a3e; }
 
 #casestudies .img-hero, #whoweare .img-hero, #whatwedo .img-hero {
   display: block;
@@ -620,8 +624,6 @@ h1.logo-thin {
       width: 45rem; }
     .splash p {
       width: 38rem; }
-  .content-wrapper {
-    top: 65rem; }
   .lead-img {
     height: 50rem;
     background-size: auto 50rem; } }

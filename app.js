@@ -64,7 +64,19 @@ app.get('/', function (req, res) {
 });
 
 app.get('/services', function (req, res) {
-  res.render('services');
+  res.render('frameworks');
+});
+
+app.get('/services/understand', function (req, res) {
+  res.render('understand');
+});
+
+app.get('/services/build', function (req, res) {
+  res.render('build');
+});
+
+app.get('/services/develop', function (req, res) {
+  res.render('develop');
 });
 
 app.get('/privacy', function (req, res) {

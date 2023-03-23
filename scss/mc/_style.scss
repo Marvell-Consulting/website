@@ -16,14 +16,14 @@ $mc-grey-darker: #505a5f;
 }
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-variant-ligatures: no-common-ligatures;
 }
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-size: 62.5%;
   background-color: $mc-blue;
 }
@@ -34,7 +34,7 @@ body {
     line-height: 3rem;
     color: $mc-blue;
     font-size: 1.8rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Hind', sans-serif;
 }
 
 p, li  {font-weight: 300;}
@@ -69,8 +69,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open sans', sans-serif;
-  font-weight: 500;
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -217,11 +217,11 @@ a.mc-button {
 }
 
 .content-head-ribbon {
-    color: $mc-green;
+    color: $mc-blue;
 }
 
 .content-subhead{
-    color: $mc-green;
+    color: $mc-blue;
     .citation {
       padding-top: 0.5rem;
     }
@@ -235,7 +235,6 @@ a.mc-button {
     margin-top: 0px;
   }
 
-  .marvell {background:url(/public/img/team2.jpg);}
   .img-hero {
     display: block;
     height: 40rem;
@@ -260,6 +259,12 @@ a.mc-button {
   .pure-g.no-border {
       padding-bottom: 0px;
       border-bottom: none;
+  }
+}
+
+#speakwithus {
+  h2 {
+    color: $mc-white;
   }
 }
 
@@ -432,13 +437,11 @@ background-image: url(/public/img/asl-beta-header.jpg);
 #casestudy, #services, #whoweare {
   .lead-in {
     font-size: 2.5rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 3.5rem;
   }
 
-  h2, h3 {
-    color: $mc-green;
-  }
+  
 
   h1 {
     margin-bottom: 0.5rem;
@@ -522,7 +525,6 @@ background-image: url(/public/img/asl-beta-header.jpg);
       display: block;
       font-size: 1.5rem;
       color: $mc-blue;
-      font-weight: bold;
       margin-top: 0.5rem;
     }
   }
@@ -548,7 +550,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
   .brp {background:url(/public/img/brp-thumb.jpg);}
   .rotm {background:url(/public/img/rotm-thumb.jpg);}
   .wiley {background:url(/public/img/wiley-thumb.png);}
-  .marvell {background:url(/public/img/team2.jpg);}
+  .marvell {background:url(/public/img/team.png);}
   .nhsx-discovery {background:url(/public/img/nhsx-eco.png); border: 1px solid #dee2e6;}
   .nhsx-alpha {background:url(/public/img/nhsxalpha-thumb.png);}
   .nhsx-beta {background:url(/public/img/nhsxbeta-thumb.png);}
@@ -560,6 +562,9 @@ background-image: url(/public/img/asl-beta-header.jpg);
   .mark {background:url(/public/img/headshot-mark.jpg);}
   .lenny {background:url(/public/img/headshot-lenny.jpg);}
   .lev {background:url(/public/img/headshot-missing.jpg);}
+  .understand-your-users {background:url(/public/img/research-thumb.jpg);}
+  .building-your-digital-service {background:url(/public/img/build.jpg);}
+  .develop-your-digital-skills {background:url(/public/img/develop.jpg);}
 
   .img {
     display: block;
@@ -582,7 +587,6 @@ background-image: url(/public/img/asl-beta-header.jpg);
     display: block;
     font-size: 1.5rem;
     color: $mc-blue;
-    font-weight: bold;
   }
     
   .img-hero {
@@ -792,9 +796,6 @@ background-image: url(/public/img/asl-beta-header.jpg);
     p {
       width: 38rem;
     }
-  }
-  .content-wrapper {
-    top: 65rem;
   }
 
   .lead-img {
