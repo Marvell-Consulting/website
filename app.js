@@ -64,7 +64,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/services', function (req, res) {
-  res.render('frameworks');
+  res.render('services');
+});
+
+app.get('/frameworks', function (req, res) {
+  res.redirect('/services');
 });
 
 app.get('/services/understand', function (req, res) {

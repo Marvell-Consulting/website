@@ -235,19 +235,12 @@ a.mc-button {
     margin-top: 0px;
   }
 
-  .img-hero {
-    display: block;
-    height: 40rem;
-    width: 100%;
-    margin-bottom: 1rem;
-    background-size: 60rem 40rem;
-    background-repeat: no-repeat;
+}
 
-    div {
-      position: absolute;
-      height: 40rem;
-      width: 60rem;
-    }
+#services {
+  .img-hero.services {
+    background-size: contain;
+    background-size: 100%;
   }
 }
 
@@ -455,6 +448,10 @@ background-image: url(/public/img/asl-beta-header.jpg);
     font-size: 2rem;
   }
 
+  .content-head-ribbon {
+    font-size: 3.5rem;
+  }
+
   .client {
     margin-top: 0;
   }
@@ -539,7 +536,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
   text-align: center;
 }
 
-#casestudies, #whoweare, #whatwedo {
+#casestudies, #whoweare, #whatwedo, #services {
   .research {background:url(/public/img/research-thumb.jpg);}
   .design {background:url(/public/img/design-thumb.jpg);}
   .deliver {background:url(/public/img/deliver-thumb.jpg);}
@@ -565,6 +562,7 @@ background-image: url(/public/img/asl-beta-header.jpg);
   .understand-your-users {background:url(/public/img/research-thumb.jpg);}
   .building-your-digital-service {background:url(/public/img/build.jpg);}
   .develop-your-digital-skills {background:url(/public/img/develop.jpg);}
+  .services {background:url(/public/img/services-hero.jpg);}
 
   .img {
     display: block;
