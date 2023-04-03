@@ -122,6 +122,8 @@ app.get('/jobs/:id', function (req, res, next) {
   res.render(`jobs/${job.id}`);
 });
 
+app.get('/downloads/digital-academy', (req, res) => res.download('./public/pdf/digital-academy.pdf'));
+
 
 app.use((req, res) => {
   res.status(404);
