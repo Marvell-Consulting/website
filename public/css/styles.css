@@ -12,7 +12,7 @@ html {
   background-color: #112a3e; }
 
 body {
-  line-height: 3rem;
+  line-height: 1.5;
   color: #112a3e;
   font-size: 1.8rem;
   font-family: 'Hind', sans-serif; }
@@ -21,15 +21,23 @@ p, li {
   font-weight: 300; }
 
 h1 {
-  font-size: 4rem;
-  line-height: 1.2; }
+  font-size: 4.4rem;
+  line-height: 1.2;
+  font-weight: 600; }
 
 h2 {
   font-size: 3.5rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-weight: 600;
+  padding-bottom: 1.45rem; }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: 600; }
+
+h4 {
+  font-size: 2.2rem;
   line-height: 1.2; }
 
 h1,
@@ -48,10 +56,12 @@ h4,
 h5,
 h6 {
   font-family: 'Hind', sans-serif;
-  font-weight: 300; }
+  font-weight: 600; }
 
 a {
   color: #25A75C; }
+  a:hover {
+    color: #13542e; }
 
 .anchor {
   position: relative; }
@@ -79,17 +89,13 @@ a {
 .is-right {
   text-align: right; }
 
-h1.logo-thin {
-  font-weight: 300;
-  margin-top: 13rem; }
-
 /*
  * -- PURE FORM STYLES --
  * Style the form inputs and labels
  */
 .pure-form label {
   margin: 1rem 0 0;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 100%; }
 
 .pure-form input[type],
@@ -123,22 +129,6 @@ h1.logo-thin {
   margin: 10rem auto auto auto;
   text-align: left;
   padding: 0 2rem; }
-  .splash h1 {
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 0.2rem;
-    padding-bottom: 0; }
-  .splash .speak-out {
-    font-size: 2rem;
-    color: #ccc; }
-  .splash ol {
-    width: 100%; }
-  .splash p {
-    width: 100%;
-    letter-spacing: 0.2rem;
-    margin-top: 0;
-    font-size: 2rem;
-    line-height: 3.5rem; }
 
 .splash-subhead {
   color: #112a3e;
@@ -158,54 +148,27 @@ h1.logo-thin {
 
 .content-subhead {
   color: #112a3e; }
-  .content-subhead .citation {
-    padding-top: 0.5rem; }
 
-#whatwedo .capability {
-  margin-top: 0px; }
-
-#whatwedo h3 {
-  margin-top: 0px; }
+.citation {
+  padding-top: 0.5rem;
+  display: block;
+  font-size: 1.8rem;
+  color: #505a5f; }
 
 #services .img-hero.services {
   background-size: contain;
   background-size: 100%; }
 
-#whatwedo .pure-g, #casestudies .pure-g, #whoweare .pure-g, #aboutus .pure-g, #whowehelped .pure-g, #speakwithus .pure-g, #services .pure-g, #casestudy .pure-g {
+#whatwedo .pure-g, #casestudies .pure-g, #whoweare .pure-g, #aboutus .pure-g, #whowehelped .pure-g, #speakwithus .pure-g, #services .pure-g, #service .pure-g, #casestudy .pure-g {
   padding-bottom: 2rem;
   border-bottom: 0.1rem solid #dee2e6; }
 
-#whatwedo .pure-g.no-border, #casestudies .pure-g.no-border, #whoweare .pure-g.no-border, #aboutus .pure-g.no-border, #whowehelped .pure-g.no-border, #speakwithus .pure-g.no-border, #services .pure-g.no-border, #casestudy .pure-g.no-border {
+#whatwedo .pure-g.no-border, #casestudies .pure-g.no-border, #whoweare .pure-g.no-border, #aboutus .pure-g.no-border, #whowehelped .pure-g.no-border, #speakwithus .pure-g.no-border, #services .pure-g.no-border, #service .pure-g.no-border, #casestudy .pure-g.no-border {
   padding-bottom: 0px;
   border-bottom: none; }
 
 #speakwithus h2 {
   color: #fff; }
-
-#whowehelped img {
-  text-align: center;
-  width: 30rem; }
-
-#whowehelped h2 {
-  text-align: left;
-  margin-bottom: 2rem; }
-
-#whowehelped p {
-  text-align: left; }
-
-#whowehelped p.quote {
-  color: #25A75C;
-  font-weight: 300;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
-  border-left: 0.3rem solid #25A75C;
-  padding: 0rem 0rem 0rem 2rem; }
-  #whowehelped p.quote .citation {
-    display: block;
-    font-size: 1.5rem;
-    color: #112a3e;
-    font-weight: bold;
-    margin-top: 0.5rem; }
 
 #bigquote a {
   color: #fff;
@@ -312,78 +275,61 @@ h1.logo-thin {
 .lead-img-contact {
   background-image: url(/public/img/contact-header.jpg); }
 
-#casestudy .lead-in, #services .lead-in, #whoweare .lead-in {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 3.5rem; }
+.lead-in {
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  margin-top: 0rem; }
 
-#casestudy h1, #services h1, #whoweare h1 {
-  margin-bottom: 0.5rem; }
-
-#casestudy h2, #services h2, #whoweare h2 {
-  font-size: 2.5rem; }
-
-#casestudy h3, #services h3, #whoweare h3 {
-  font-size: 2rem; }
-
-#casestudy .content-head-ribbon, #services .content-head-ribbon, #whoweare .content-head-ribbon {
-  font-size: 3.5rem; }
-
-#casestudy .client, #services .client, #whoweare .client {
+.client {
+  font-size: 2.2rem;
+  font-weight: 300;
+  display: block;
   margin-top: 0; }
 
-#casestudy .bignumber p, #services .bignumber p, #whoweare .bignumber p {
+.bignumber p {
   color: #25A75C;
   margin: 0;
   font-weight: 600; }
 
-#casestudy .bignumber div, #services .bignumber div, #whoweare .bignumber div {
+.bignumber div {
   padding: 0;
   margin-bottom: 4rem; }
 
-#casestudy .bignumber h3, #services .bignumber h3, #whoweare .bignumber h3 {
-  font-size: 8rem;
-  line-height: 8rem;
-  margin: 0;
-  font-weight: 800; }
-  #casestudy .bignumber h3 span, #services .bignumber h3 span, #whoweare .bignumber h3 span {
-    font-size: 3rem; }
-
-#casestudy .services-header h2, #services .services-header h2, #whoweare .services-header h2 {
+.services-header h2 {
   margin-bottom: 1rem;
   margin-top: 2rem; }
 
-#casestudy .services-sidebar h3, #services .services-sidebar h3, #whoweare .services-sidebar h3 {
+.services-sidebar h3 {
   margin-top: 0px; }
 
-#casestudy .sidebar, #casestudy .main, #casestudy .title, #services .sidebar, #services .main, #services .title, #whoweare .sidebar, #whoweare .main, #whoweare .title {
+.sidebar, .main, .title {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-#casestudy .sidebar, #services .sidebar, #whoweare .sidebar {
+.sidebar {
   margin-bottom: 2rem; }
-  #casestudy .sidebar p, #services .sidebar p, #whoweare .sidebar p {
+  .sidebar p {
     margin: 0; }
-  #casestudy .sidebar h3:first-child, #services .sidebar h3:first-child, #whoweare .sidebar h3:first-child {
+  .sidebar h3:first-child {
     margin-top: 0; }
 
-#casestudy .intro-para, #services .intro-para, #whoweare .intro-para {
+.intro-para {
   margin-top: 2.5rem; }
 
-#casestudy p.quote, #services p.quote, #whoweare p.quote {
+p.quote {
   color: #25A75C;
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 3.5rem;
   border-left: 0.3rem solid #25A75C;
   padding: 0rem 0rem 0rem 2rem; }
-  #casestudy p.quote .citation, #services p.quote .citation, #whoweare p.quote .citation {
+  p.quote .citation {
     display: block;
     font-size: 1.5rem;
     color: #112a3e;
     margin-top: 0.5rem; }
 
-#casestudy .more, #services .more, #whoweare .more {
+.more {
   margin-top: 2rem;
   border-top: 0.1rem solid #dee2e6; }
 
@@ -421,7 +367,7 @@ h1.logo-thin {
   background: url(/public/img/wiley-thumb.png); }
 
 #casestudies .marvell, #whoweare .marvell, #whatwedo .marvell, #services .marvell {
-  background: url(/public/img/team.jpg); }
+  background: url(/public/img/team2.jpg); }
 
 #casestudies .nhsx-discovery, #whoweare .nhsx-discovery, #whatwedo .nhsx-discovery, #services .nhsx-discovery {
   background: url(/public/img/nhsx-eco.png);
@@ -485,7 +431,7 @@ h1.logo-thin {
 #casestudies .citation, #whoweare .citation, #whatwedo .citation, #services .citation {
   display: block;
   font-size: 1.5rem;
-  color: #112a3e; }
+  color: #505a5f; }
 
 #casestudies .img-hero, #whoweare .img-hero, #whatwedo .img-hero, #services .img-hero {
   display: block;
@@ -503,16 +449,15 @@ h1.logo-thin {
 #casestudies .case-study-link a, #whoweare .case-study-link a, #whatwedo .case-study-link a, #services .case-study-link a {
   text-decoration: none; }
   #casestudies .case-study-link a :hover, #whoweare .case-study-link a :hover, #whatwedo .case-study-link a :hover, #services .case-study-link a :hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    text-decoration-color: #25A75C; }
   #casestudies .case-study-link a .more-info, #whoweare .case-study-link a .more-info, #whatwedo .case-study-link a .more-info, #services .case-study-link a .more-info {
     text-decoration: underline; }
   #casestudies .case-study-link a p, #whoweare .case-study-link a p, #whatwedo .case-study-link a p, #services .case-study-link a p {
     color: #112a3e; }
-
-#casestudies a:hover .img div, #whoweare a:hover .img div, #whatwedo a:hover .img div, #services a:hover .img div {
-  background: #25A75C;
-  opacity: 0.5;
-  transition: opacity 0.5s, background 0.5s; }
+    #casestudies .case-study-link a p :hover, #whoweare .case-study-link a p :hover, #whatwedo .case-study-link a p :hover, #services .case-study-link a p :hover {
+      text-decoration: underline;
+      text-decoration-color: #25A75C; }
 
 #bigquote {
   background-color: #25A75C;
@@ -520,24 +465,9 @@ h1.logo-thin {
   #bigquote h3 {
     color: #fff; }
 
-#careers {
-  background-color: #82e3ab; }
-  #careers p {
-    color: #112a3e; }
-
 .fullwidth {
   background: #fff;
   padding: 8rem 0 0 0; }
-  .fullwidth h1 {
-    margin-top: 3rem;
-    line-height: 5rem; }
-  .fullwidth h2 {
-    margin-top: 4rem;
-    margin-top: 1.2; }
-  .fullwidth h3 {
-    margin-bottom: 0; }
-  .fullwidth p {
-    margin-top: 0; }
 
 .nosidebar {
   padding-left: 2rem;
@@ -553,10 +483,10 @@ h1.logo-thin {
     margin-bottom: 4rem; }
   #aboutus .bignumber h3, #whowehelped .bignumber h3 {
     color: #25A75C;
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 12rem;
+    line-height: 12rem;
     margin: 0;
-    font-weight: lighter; }
+    font-weight: 600; }
     #aboutus .bignumber h3 span, #whowehelped .bignumber h3 span {
       font-size: 3rem; }
   #aboutus .bignumber .xl-box, #whowehelped .bignumber .xl-box {
@@ -590,13 +520,28 @@ h1.logo-thin {
     height: 50rem;
     background-position: center;
     background-size: cover; }
+  .splash-container-understand {
+    background-image: url(../img/frameworks-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
+  .splash-container-build {
+    background-image: url(../img/build-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
+  .splash-container-develop {
+    background-image: url(../img/asl-beta-header.jpg);
+    height: 50rem;
+    background-position: center;
+    background-size: cover; }
   .splash-container-about {
     background-image: url(../img/office-header.jpg);
     height: 50rem;
     background-position: center;
     background-size: cover; }
   .splash-container-frameworks {
-    background-image: url(../img/frameworks-header.jpg);
+    background-image: url(../img/blog-header.jpg);
     height: 50rem;
     background-position: center;
     background-size: cover; }
@@ -610,14 +555,15 @@ h1.logo-thin {
     height: 100%;
     z-index: 2; }
   .splash-overlay {
+    background: rgba(37, 167, 91, 0.2);
     overflow: hidden;
     height: 100%;
     z-index: 2; }
   .splash {
-    margin: 23rem auto auto auto; }
+    margin: 20rem auto auto auto; }
     .splash h1 {
       width: 50rem;
-      font-size: 3rem; }
+      font-size: 4.4rem; }
     .splash ol {
       width: 45rem; }
     .splash p {
@@ -686,7 +632,7 @@ h1.logo-thin {
   text-align: right; }
 
 .home-menu li {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: normal;
   font-weight: normal;
   padding-top: 3rem; }
@@ -794,8 +740,8 @@ h1.logo-thin {
 
 #block-text {
   padding: 0 0 5px;
-  font-size: 4.5rem;
-  font-weight: lighter;
+  font-size: 4.4rem;
+  font-weight: 600;
   color: #fff;
   background-color: #25A75C;
   display: inline;
