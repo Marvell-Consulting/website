@@ -42,6 +42,7 @@ app.get('/sitemap.xml', function(req, res) {
     smStream.write({ url: '/casestudy/nhsx-beta'});
     smStream.write({ url: '/casestudy/modern-slavery'});
     smStream.write({ url: '/privacy'});
+    smStream.write({ url: '/social-value-statement'});
     smStream.end()
 
     // cache the response
@@ -85,6 +86,10 @@ app.get('/services/develop', function (req, res) {
 
 app.get('/privacy', function (req, res) {
   res.render('privacy');
+});
+
+app.get('/social-value-statement', function (req, res) {
+  res.render('socialvaluestatement');
 });
 
 app.get('/casestudies', function (req, res) {
