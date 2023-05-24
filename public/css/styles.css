@@ -234,7 +234,7 @@ a {
   background-image: url(/public/img/ukvi-header.jpg); }
 
 .lead-img-dhsc-decision-tree {
-  background-image: url(/public/img/dhsc-decision-tree-3.png); }
+  background-image: url(/public/img/dhsc-decision-tree-header.png); }
 
 .lead-img-rotm {
   background-image: url(/public/img/rotm-header.jpg); }
@@ -377,7 +377,8 @@ p.quote {
   border: 1px solid #dee2e6; }
 
 #casestudies .dhsc-decision-tree, #whoweare .dhsc-decision-tree, #whatwedo .dhsc-decision-tree, #services .dhsc-decision-tree {
-  background: url(/public/img/dhsc-decision-tree-1.png); }
+  background: url(/public/img/dhsc-decision-tree-1.png);
+  background-color: #04cfb1; }
 
 #casestudies .nhsx-alpha, #whoweare .nhsx-alpha, #whatwedo .nhsx-alpha, #services .nhsx-alpha {
   background: url(/public/img/nhsxalpha-thumb.png); }
