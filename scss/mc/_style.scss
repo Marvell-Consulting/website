@@ -238,13 +238,18 @@ a.mc-button {
 
 .content-subhead{
     color: $mc-blue;
-  }
-  .citation {
-    padding-top: 0.5rem;
-    display: block;
-    font-size: 1.8rem;
-    color: $mc-grey-darker;
-  }
+    
+    img {
+      max-width: 100%;
+      max-height: 22rem;
+    }
+}
+.citation {
+  padding-top: 0.5rem;
+  display: block;
+  font-size: 1.8rem;
+  color: $mc-grey-darker;
+}
   
 // #whatwedo {
 //   .capability {
@@ -383,8 +388,10 @@ a.mc-button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 20rem;
-  height: 20rem;
+  // height: 20rem;
   border-bottom: 1px solid $mc-grey;
+  text-align: center;
+  height: auto;
 }
 
 .lead-img-ukvi {
@@ -557,6 +564,10 @@ background-image: url(/public/img/asl-beta-header.jpg);
   text-align: center;
 }
 
+#casestudies, #blog {
+  margin-top: 1em;
+}
+
 #casestudies, #whoweare, #whatwedo, #services {
   .research {background:url(/public/img/research-thumb.jpg);}
   .design {background:url(/public/img/design-thumb.jpg);}
@@ -600,7 +611,6 @@ background-image: url(/public/img/asl-beta-header.jpg);
       height: 22rem;
       width: 35rem;
     }
-  
   }
     
   .citation {
@@ -625,10 +635,12 @@ background-image: url(/public/img/asl-beta-header.jpg);
     }
   }
 
-  .case-study-link {
+  .case-study-link, .blog-post-link {
+    // set pointer to finger
+    cursor: pointer;
     a {
       text-decoration: none;
-      :hover{
+      &.focus, &:hover{
         text-decoration: underline;
         text-decoration-color: $mc-green;
       }
@@ -646,15 +658,9 @@ background-image: url(/public/img/asl-beta-header.jpg);
     }
   }
 
-  // a:hover {
-  //   .img {
-  //     div {
-  //       background: $mc-green;
-  //       opacity: 0.5;
-  //       transition: opacity 0.5s, background 0.5s;
-  //     }
-  //   }
-  // }
+  img {
+    max-width: 30rem;
+  }
 
   // img {
   //   max-width: 28rem;

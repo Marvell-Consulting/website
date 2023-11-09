@@ -36,4 +36,31 @@
       });
 
       window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
-      })(this, this.document);
+
+    
+    // focus on the contained link when hovering on the element .case-study-link
+    const caseStudyLinks = document.querySelectorAll('.case-study-link');
+    
+    caseStudyLinks.forEach((caseStudy) => {
+        const linkAnchor = caseStudy.querySelector(":scope > a");
+        let hasClass = linkAnchor.classList.contains('focus');
+        
+        caseStudy.addEventListener('mouseover', (e) => {
+            if (!hasClass) {
+                linkAnchor.classList.add('focus');
+            }
+        });
+
+        caseStudy.addEventListener('click', (e) => {
+            //trigger click on link
+            linkAnchor.click();
+        });
+
+        caseStudy.addEventListener('mouseout', (e) => {
+            if (!hasClass) {
+                linkAnchor.classList.remove('focus');
+            }
+        });
+    });
+
+    })(this, this.document);

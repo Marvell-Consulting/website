@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {{> head}}
+    </head>
+<body>
+{{> header}}
+<div id="blog" class="content fullwidth">
+    <div class="splash-container-casestudies">
+        <div class="splash-overlay">
+            <div class="splash">
+                <div class="content" id="">
+                    <div class="xl-box pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
+                        <h1 id="block-text">Insights and news</h1>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="pure-g">
+        <div id="casestudies">
+            {{#posts}}
+                <div class="case-study-link xl-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+                    {{#thumbnail}}
+                    <div class="img">
+                        <img src="{{thumbnail}}" />
+                    </div>
+                    {{/thumbnail}}
+                    <a href="/blog/{{meta.slug}}">
+                        <h4 class="content-subhead">
+                            {{title}}
+                        </h4>
+                    </a>
+                    <div class="citation">By {{author}}</div>
+                    <div class="citation">On {{date}}</div>
+                    <p>
+                        {{intro}}
+                    </p>
+                </div>
+            {{/posts}}
+        </div>
+    </div>
+    
+</div>
+{{> contact}}
+
+{{> footer}}
+
+</body>
+</html>
