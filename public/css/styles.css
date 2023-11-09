@@ -148,6 +148,9 @@ a {
 
 .content-subhead {
   color: #112a3e; }
+  .content-subhead img {
+    max-width: 100%;
+    max-height: 22rem; }
 
 .citation {
   padding-top: 0.5rem;
@@ -227,8 +230,9 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 20rem;
-  height: 20rem;
-  border-bottom: 1px solid #dee2e6; }
+  border-bottom: 1px solid #dee2e6;
+  text-align: center;
+  height: auto; }
 
 .lead-img-ukvi {
   background-image: url(/public/img/ukvi-header.jpg); }
@@ -338,6 +342,9 @@ p.quote {
 
 .logos-container {
   text-align: center; }
+
+#casestudies, #blog {
+  margin-top: 1em; }
 
 #casestudies .research, #whoweare .research, #whatwedo .research, #services .research {
   background: url(/public/img/research-thumb.jpg); }
@@ -453,18 +460,23 @@ p.quote {
     height: 40rem;
     width: 60rem; }
 
-#casestudies .case-study-link a, #whoweare .case-study-link a, #whatwedo .case-study-link a, #services .case-study-link a {
-  text-decoration: none; }
-  #casestudies .case-study-link a :hover, #whoweare .case-study-link a :hover, #whatwedo .case-study-link a :hover, #services .case-study-link a :hover {
-    text-decoration: underline;
-    text-decoration-color: #25A75C; }
-  #casestudies .case-study-link a .more-info, #whoweare .case-study-link a .more-info, #whatwedo .case-study-link a .more-info, #services .case-study-link a .more-info {
-    text-decoration: underline; }
-  #casestudies .case-study-link a p, #whoweare .case-study-link a p, #whatwedo .case-study-link a p, #services .case-study-link a p {
-    color: #112a3e; }
-    #casestudies .case-study-link a p :hover, #whoweare .case-study-link a p :hover, #whatwedo .case-study-link a p :hover, #services .case-study-link a p :hover {
+#casestudies .case-study-link, #casestudies .blog-post-link, #whoweare .case-study-link, #whoweare .blog-post-link, #whatwedo .case-study-link, #whatwedo .blog-post-link, #services .case-study-link, #services .blog-post-link {
+  cursor: pointer; }
+  #casestudies .case-study-link a, #casestudies .blog-post-link a, #whoweare .case-study-link a, #whoweare .blog-post-link a, #whatwedo .case-study-link a, #whatwedo .blog-post-link a, #services .case-study-link a, #services .blog-post-link a {
+    text-decoration: none; }
+    #casestudies .case-study-link a.focus, #casestudies .case-study-link a:hover, #casestudies .blog-post-link a.focus, #casestudies .blog-post-link a:hover, #whoweare .case-study-link a.focus, #whoweare .case-study-link a:hover, #whoweare .blog-post-link a.focus, #whoweare .blog-post-link a:hover, #whatwedo .case-study-link a.focus, #whatwedo .case-study-link a:hover, #whatwedo .blog-post-link a.focus, #whatwedo .blog-post-link a:hover, #services .case-study-link a.focus, #services .case-study-link a:hover, #services .blog-post-link a.focus, #services .blog-post-link a:hover {
       text-decoration: underline;
       text-decoration-color: #25A75C; }
+    #casestudies .case-study-link a .more-info, #casestudies .blog-post-link a .more-info, #whoweare .case-study-link a .more-info, #whoweare .blog-post-link a .more-info, #whatwedo .case-study-link a .more-info, #whatwedo .blog-post-link a .more-info, #services .case-study-link a .more-info, #services .blog-post-link a .more-info {
+      text-decoration: underline; }
+    #casestudies .case-study-link a p, #casestudies .blog-post-link a p, #whoweare .case-study-link a p, #whoweare .blog-post-link a p, #whatwedo .case-study-link a p, #whatwedo .blog-post-link a p, #services .case-study-link a p, #services .blog-post-link a p {
+      color: #112a3e; }
+      #casestudies .case-study-link a p :hover, #casestudies .blog-post-link a p :hover, #whoweare .case-study-link a p :hover, #whoweare .blog-post-link a p :hover, #whatwedo .case-study-link a p :hover, #whatwedo .blog-post-link a p :hover, #services .case-study-link a p :hover, #services .blog-post-link a p :hover {
+        text-decoration: underline;
+        text-decoration-color: #25A75C; }
+
+#casestudies img, #whoweare img, #whatwedo img, #services img {
+  max-width: 30rem; }
 
 #bigquote {
   background-color: #25A75C;

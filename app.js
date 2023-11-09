@@ -4,6 +4,12 @@ const path = require('path');
 const winston = require('winston');
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { createGzip } = require('zlib');
+const axios = require('axios');
+const luxon = require('luxon');
+
+const WAGTAIL_SERVER = process.env.WAGTAIL_SERVER || 'http://localhost';
+const WAGTAIL_PORT = process.env.WAGTAIL_PORT || 8000;
+
 let sitemap;
 
 const jobs = require('./jobs');
@@ -96,6 +102,76 @@ app.get('/casestudies', function (req, res) {
   res.render('casestudies');
 });
 
+app.get('/casestudy/:id', function (req, res) {
+  res.render(`casestudies/${req.params.id}`);
+});
+
+app.get('/blog', function (req, res) {
+  // get all the blog posts
+  axios.get(`http://${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&fields=intro,thumbnail,author,date`)
+    .then((response) => {
+      // handle success
+      let posts = response.data.items;
+
+      // sort posts via date
+      posts.sort((a, b) => {
+        return luxon.DateTime.fromISO(b.date) - luxon.DateTime.fromISO(a.date);
+      });
+
+      // format date
+      posts.forEach((post) => {
+        post.date = luxon.DateTime.fromISO(post.date).toLocaleString(luxon.DateTime.DATE_FULL);
+      });
+
+      // render the posts
+      res.render('blog', { posts: posts });
+    });
+});
+
+app.get('/blog/:id', function (req, res) {
+  // get the specific blog item
+  axios.get(`http://${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&slug=${req.params.id}&fields=body,author,headerimage,date`)
+    .then((response) => {
+      // handle success
+      let blogPost = response.data.items[0];
+
+      // format date
+      blogPost.date = luxon.DateTime.fromISO(response.data.items[0].date).toLocaleString(luxon.DateTime.DATE_FULL);
+
+
+
+      axios.get(`http://${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&fields=intro,thumbnail,author,date`)
+        .then((response) => {
+          // handle success
+          let posts = response.data.items;
+
+          // sort posts via date
+          posts.sort((a, b) => {
+            return luxon.DateTime.fromISO(b.date) - luxon.DateTime.fromISO(a.date);
+          });
+
+          // remove the current post from the list
+          posts = posts.filter((post) => {
+            return post.meta.slug !== req.params.id;
+          });
+
+          // limit the posts to 3
+          posts = posts.slice(0, 3);
+
+          // format date
+          posts.forEach((post) => {
+            post.date = luxon.DateTime.fromISO(post.date).toLocaleString(luxon.DateTime.DATE_FULL);
+          });
+
+          blogPost.posts = posts;
+
+          // render the post
+          res.render('blog-post', blogPost);
+        });
+
+    });
+});
+
 app.get('/about', function (req, res) {
   res.render('about');
 });
@@ -110,10 +186,6 @@ app.get('/frameworks', function (req, res) {
 
 app.get('/contact', function (req, res) {
   res.render('contact');
-});
-
-app.get('/casestudy/:id', function (req, res) {
-  res.render(`casestudies/${req.params.id}`);
 });
 
 app.get('/jobs/:id', function (req, res, next) {
