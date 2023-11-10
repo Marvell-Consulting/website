@@ -125,6 +125,10 @@ app.get('/blog', function (req, res) {
 
       // render the posts
       res.render('blog', { posts: posts });
+    }).catch((error) => {
+      // handle error
+      console.log(error);
+      res.render('404');
     });
 });
 
@@ -164,6 +168,10 @@ app.get('/blog/:id', function (req, res) {
 
           // render the post
           res.render('blog-post', blogPost);
+        }).catch((error) => {
+          // handle error
+          console.log(error);
+          res.render('404');
         });
 
     }).catch((error) => {
