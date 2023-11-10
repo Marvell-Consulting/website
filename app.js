@@ -134,11 +134,8 @@ app.get('/blog/:id', function (req, res) {
     .then((response) => {
       // handle success
       let blogPost = response.data.items[0];
-
       // format date
       blogPost.date = luxon.DateTime.fromISO(response.data.items[0].date).toLocaleString(luxon.DateTime.DATE_FULL);
-
-
 
       axios.get(`${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&fields=intro,thumbnail,author,date`)
         .then((response) => {
@@ -169,6 +166,10 @@ app.get('/blog/:id', function (req, res) {
           res.render('blog-post', blogPost);
         });
 
+    }).catch((error) => {
+      // handle error
+      console.log(error);
+      res.render('404');
     });
 });
 
