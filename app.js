@@ -108,7 +108,7 @@ app.get('/casestudy/:id', function (req, res) {
 
 app.get('/blog', function (req, res) {
   // get all the blog posts
-  axios.get(`http://${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&fields=intro,thumbnail,author,date`)
+  axios.get(`${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&fields=intro,thumbnail,author,date`)
     .then((response) => {
       // handle success
       let posts = response.data.items;
@@ -130,7 +130,7 @@ app.get('/blog', function (req, res) {
 
 app.get('/blog/:id', function (req, res) {
   // get the specific blog item
-  axios.get(`http://${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&slug=${req.params.id}&fields=body,author,headerimage,date`)
+  axios.get(`${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&slug=${req.params.id}&fields=body,author,headerimage,date`)
     .then((response) => {
       // handle success
       let blogPost = response.data.items[0];
@@ -140,7 +140,7 @@ app.get('/blog/:id', function (req, res) {
 
 
 
-      axios.get(`http://${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&fields=intro,thumbnail,author,date`)
+      axios.get(`${WAGTAIL_SERVER}:${WAGTAIL_PORT}/api/v2/pages?type=blog.BlogPage&fields=intro,thumbnail,author,date`)
         .then((response) => {
           // handle success
           let posts = response.data.items;
