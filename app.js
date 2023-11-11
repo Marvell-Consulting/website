@@ -12,8 +12,6 @@ const WAGTAIL_PORT = process.env.WAGTAIL_PORT || 8000;
 
 let sitemap;
 
-const jobs = require('./jobs');
-
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(require('churchill')(winston));
 
@@ -59,11 +57,6 @@ app.get('/sitemap.xml', function(req, res) {
     console.error(e);
     res.status(500).end();
   }
-});
-
-app.use((req, res, next) => {
-  res.locals.jobs = jobs;
-  next();
 });
 
 app.get('/', function (req, res) {
@@ -128,7 +121,7 @@ app.get('/blog', function (req, res) {
     }).catch((error) => {
       // handle error
       console.log(error);
-      res.render('404');
+      res.render('500');
     });
 });
 
@@ -171,13 +164,13 @@ app.get('/blog/:id', function (req, res) {
         }).catch((error) => {
           // handle error
           console.log(error);
-          res.render('404');
+          res.render('500');
         });
 
     }).catch((error) => {
       // handle error
       console.log(error);
-      res.render('404');
+      res.render('500');
     });
 });
 
@@ -195,17 +188,6 @@ app.get('/frameworks', function (req, res) {
 
 app.get('/contact', function (req, res) {
   res.render('contact');
-});
-
-app.get('/jobs/:id', function (req, res, next) {
-  const job = jobs.reduce((found, job) => {
-    console.log(job.id, req.params.id)
-    return found || (job.id === req.params.id ? job : null);
-  }, null);
-  if (!job) {
-    next();
-  }
-  res.render(`jobs/${job.id}`);
 });
 
 app.get('/downloads/digital-academy', (req, res) => res.download('./public/pdf/digital-academy.pdf'));
