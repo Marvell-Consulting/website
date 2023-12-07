@@ -13,6 +13,7 @@ const WAGTAIL_PORT = process.env.WAGTAIL_PORT || 8000;
 let sitemap;
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/.well-known', express.static(path.join(__dirname, '.well-known')));
 app.use(require('churchill')(winston));
 
 app.engine('html', require('mustache-express')(path.join(__dirname, '/views/partials')));
